@@ -1,0 +1,11 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const script=fs.readFileSync('work/prototype-check.js','utf8').split('function home()')[0];
+const context={document:{getElementById:()=>({})}};
+vm.createContext(context);
+vm.runInContext(script+';globalThis.result=uyLevels;globalThis.testVictors=victors;',context);
+assert.equal(context.result.length,3);
+assert.equal(context.result.some(l=>l.name==='Zodiac'),false);
+assert.deepEqual(Array.from(context.result,l=>l.rank),[1,2,3]);
+assert.equal(context.testVictors({records:[{country:'UY',pct:100,approved:false},{country:'AR',pct:100,approved:true},{country:'UY',pct:99,approved:true}]}).length,0);
+assert.ok(context.result.every((l,i,a)=>i===0||l.aredlRank>a[i-1].aredlRank));
+console.log('OK: criterio de completacion uruguaya aceptada y orden local.');

@@ -1,0 +1,7 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const elements=new Map();function element(id){if(!elements.has(id))elements.set(id,{innerHTML:'',textContent:'',value:'',hidden:false,classList:{add(){},remove(){},toggle(){}},setAttribute(){},removeAttribute(){},addEventListener(){},focus(){},scrollIntoView(){}});return elements.get(id)}
+const context={document:{getElementById:element,querySelector:element,querySelectorAll:()=>[],addEventListener(){}},window:{addEventListener(){},scrollTo(){}},location:{hash:'#home'},setTimeout:()=>0,clearTimeout(){}};vm.createContext(context);vm.runInContext(fs.readFileSync('work/prototype-check.js','utf8'),context);
+for(const route of ['#home','#list','#players','#level/0','#level/1','#level/2','#player/AndrewS-15','#player/PlayerC','#player/unknown','#activity']){context.location.hash=route;vm.runInContext('route()',context);assert.ok(element('main').innerHTML.length>0,route);assert.ok(!element('main').innerHTML.includes('undefined'),route)}
+vm.runInContext('globalThis.ranks=players.map(p=>p.rank); profile("AndrewS-15")',context);assert.deepEqual(Array.from(context.ranks),[1,2,3,4,5,6]);assert.ok(element('main').innerHTML.includes('440'));assert.ok(element('main').innerHTML.includes('Acu'));
+vm.runInContext('profile("PlayerC")',context);assert.ok(element('main').innerHTML.includes('Todavía no tiene completaciones'));assert.ok(element('main').innerHTML.includes('Zodiac'));
+console.log('OK: 10 rutas, perfiles con/sin completaciones y puestos ordinales.');

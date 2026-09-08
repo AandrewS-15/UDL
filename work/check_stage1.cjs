@@ -1,0 +1,20 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const nodes=new Map();const el=id=>{if(!nodes.has(id))nodes.set(id,{innerHTML:'',textContent:'',value:'',checked:false,hidden:false,dataset:{},classList:{add(){},remove(){},toggle(){return false}},setAttribute(){},removeAttribute(){},addEventListener(){},focus(){},scrollIntoView(){},insertAdjacentHTML(pos,s){this.innerHTML=s+this.innerHTML},querySelectorAll(){return []},querySelector(){return el('query')},reset(){},contains(){return false}});return nodes.get(id)};
+const c={document:{getElementById:el,querySelector:el,querySelectorAll:()=>[],addEventListener(){},body:{append(){}}},window:{scrollTo(){},addEventListener(){}},location:{hash:'#home'},setTimeout:()=>0,clearTimeout(){},URL};vm.createContext(c);const run=x=>vm.runInContext(x,c);run(fs.readFileSync('outputs/udl-app.js','utf8'));run(fs.readFileSync('outputs/udl-account.js','utf8'));
+for(const hash of ['home','list','players','level/0','player/AndrewS-15','activity','classification','about','rules','login','register','recover','submit','moderation','admin']){c.location.hash='#'+hash;run('route()');assert.ok(el('main').innerHTML.length,hash);assert.ok(!el('main').innerHTML.includes('undefined'),hash)}
+assert.ok(el('main').innerHTML.includes('Ingresá para continuar'));
+run('session=demoUsers[0];refreshRankings()');
+for(const hash of ['me','me/completed','me/progress','me/account','submit','submissions','submission-sent']){c.location.hash='#'+hash;run('route()');assert.ok(el('main').innerHTML.length,hash)}
+run('globalThis.denied=applyDecision(1,true)');assert.equal(c.denied,false);
+c.location.hash='#admin';run('route()');assert.ok(el('main').innerHTML.includes('Acceso restringido'));
+run('submitPage()');el('percentage').value='120';el('fps').value='240';el('video-url').value='invalid';el('submission-form').onsubmit({preventDefault(){}});assert.ok(el('level-picker-error').textContent);assert.ok(el('percentage-error').textContent);assert.ok(el('video-url-error').textContent);
+run('selectedLevel=3');el('percentage').value='100';el('fps').value='240';el('video-url').value='https://youtube.com/watch?v=demo';el('raw-url').value='';el('device').value='PC';el('notes').value='<script>sample</script>';el('submission-form').onsubmit({preventDefault(){}});run('globalThis.newSub=submissions[0]');assert.equal(c.newSub.status,'Pendiente');assert.equal(c.newSub.level,3);
+run('session=demoUsers[1];globalThis.badReject=applyDecision(1,false,"")');assert.equal(c.badReject,false);
+run('globalThis.reject=applyDecision(1,false,"Evidencia insuficiente")');assert.equal(c.reject,true);
+run('globalThis.approved=applyDecision(submissions[0].id,true);globalThis.uy=uyLevels;globalThis.andrew=players.find(p=>p.name==="AndrewS-15")');assert.equal(c.approved,true);assert.equal(c.uy.length,4);assert.equal(c.andrew.points,900);
+run('globalThis.repeated=applyDecision(submissions[0].id,true)');assert.equal(c.repeated,false);
+for(const hash of ['moderation','review/5','review/1']){c.location.hash='#'+hash;run('route()');assert.ok(!el('main').innerHTML.includes('<script>sample</script>'))}
+run('session=demoUsers[0];ownSubmissions()');assert.ok(el('main').innerHTML.includes('Evidencia insuficiente'));run('profile("AndrewS-15")');assert.ok(!el('main').innerHTML.includes('@ejemplo.com'));
+run('session=demoUsers[2]');for(const hash of ['admin','admin/moderators','admin/submissions']){c.location.hash='#'+hash;run('route()');assert.ok(el('main').innerHTML.length)}
+run('authPage("register")');el('gdname').value='TestUY';el('email').value='test@example.com';el('password').value='secret-demo-123';el('confirm').value='secret-demo-123';el('accept').checked=true;el('auth-form').onsubmit({preventDefault(){}});run('globalThis.accounts=JSON.stringify(demoUsers)');assert.ok(c.accounts.includes('TestUY'));assert.ok(!c.accounts.includes('secret-demo-123'));assert.ok(!c.accounts.includes('test@example.com'));
+console.log('OK: rutas públicas/privadas y por rol; validaciones; envío; rechazo obligatorio; aprobación y ranking; privacidad de perfil; credenciales no persistidas.');
