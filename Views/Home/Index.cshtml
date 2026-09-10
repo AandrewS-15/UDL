@@ -1,0 +1,19 @@
+@{ Layout = null; }
+<!doctype html>
+<html lang="es">
+<head>
+<base href="@Url.Content("~/")">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0f17"><title>UDL — Uruguay Demon List</title>
+<link rel="stylesheet" href="@Url.Content("~/udl-styles.css")">
+</head>
+<body>
+<a href="#main" class="skip">Saltar al contenido</a>
+<header class="topbar"><nav class="nav wrap" aria-label="Navegación principal"><a class="brand" href="#home" aria-label="UDL Inicio"><span class="mark">UDL</span><span class="brand-name">Uruguay<br>Demon List</span></a><div class="navlinks" id="navlinks"><a href="#home" data-nav="home">Inicio</a><a href="#list" data-nav="list">Lista uruguaya</a><a href="#players" data-nav="players">Jugadores</a><a href="#classification" data-nav="classification">Clasificación</a><a href="#about" data-nav="about">Acerca de</a></div><div id="account-nav" class="account-nav"></div><button class="menu" aria-label="Abrir navegación" aria-expanded="false" aria-controls="navlinks">☰</button></nav></header>
+<main id="main" class="wrap page" tabindex="-1"></main>
+<footer><div class="wrap foot"><div><strong>UDL</strong> &nbsp; Uruguay Demon List</div><div class="foot-right"><span>La comunidad uruguaya, nivel a nivel.</span><a href="#rules">Reglas</a><span class="demo">Prototipo · Datos de ejemplo</span></div></div></footer>
+<div id="notice" role="status" class="notice" hidden></div>
+<script src="@Url.Content("~/udl-app.js")"></script>
+<script src="@Url.Content("~/udl-account.js")"></script>
+</body>
+</html>
