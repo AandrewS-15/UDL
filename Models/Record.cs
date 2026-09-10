@@ -13,7 +13,7 @@ public partial class Record
 
     public byte Porcentaje { get; set; }
 
-    public string VideoUrl { get; set; } = null!;
+    public string? VideoUrl { get; set; }
 
     public string? RawFootageUrl { get; set; }
 
@@ -23,11 +23,11 @@ public partial class Record
 
     public DateTime FechaAprobacion { get; set; }
 
-    public int IdSubmissionOrigen { get; set; }
+    public int? IdSubmissionOrigen { get; set; }
 
     public virtual Jugador IdJugadorNavigation { get; set; } = null!;
 
     public virtual Nivel IdNivelNavigation { get; set; } = null!;
 
-    public virtual Submission IdSubmissionOrigenNavigation { get; set; } = null!;
+    public virtual Submission? IdSubmissionOrigenNavigation { get; set; }
 }

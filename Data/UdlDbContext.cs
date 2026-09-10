@@ -45,6 +45,7 @@ public partial class UdlDbContext : DbContext
             entity.HasAlternateKey(e => e.NombreGd).HasName("UQ_Jugador_NombreGD");
 
             entity.Property(e => e.Activo).HasDefaultValue(true, "DF_Jugador_Activo");
+            entity.Property(e => e.AvatarUrl).HasMaxLength(500);
             entity.Property(e => e.EsUruguayo).HasDefaultValue(true, "DF_Jugador_EsUruguayo");
             entity.Property(e => e.FechaAlta).HasDefaultValueSql("(sysdatetime())", "DF_Jugador_FechaAlta");
             entity.Property(e => e.NombreGd)

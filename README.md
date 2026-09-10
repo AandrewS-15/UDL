@@ -1,5 +1,9 @@
 # UDL · Etapa 3: backend e integración de lectura AREDL
 
+La importación histórica inicial ya se ejecutó: **66 jugadores y 781 records**,
+con segunda ejecución idempotente. Ver [cierre, comandos y validaciones](docs/udl-import-completed.md).
+Los dry runs y menciones de schema pendiente más abajo documentan etapas anteriores.
+
 ASP.NET Core MVC (.NET 10) con Entity Framework Core 10.0.11 y SQL Server.
 
 ## Ejecutar
@@ -274,3 +278,14 @@ todos los checks aprobados. Primera sincronización real: 1606 actualizados,
 cambios, cero actualizados, cero historiales y cero errores. Como antes,
 `UltimaSincronizacion` se refresca también en un no-op de contenido.
 No se crearon migraciones ni se modificó el esquema SQL.
+
+## Importación histórica: dry run manual
+
+Se agregó `--import-udl-sheet --dry-run` para planificar jugadores, avatares y
+completions al 100% desde una captura real completa de Players y Victors.
+No hay escritura SQL en este modo ni ejecución de ALTER. La fase real permanece
+deshabilitada. Ver [instrucciones, esquema pendiente y resultados](docs/udl-historical-import.md).
+Las reglas de matching actualizadas, aliases y resultados de la segunda revisión
+están en [Segundo dry run](docs/udl-second-dry-run.md).
+La revisión vigente y la corrección de lectura de avatares IMAGE están en
+[Tercer dry run](docs/udl-third-dry-run.md).

@@ -1,0 +1,1006 @@
+Usando la configuración de inicio de C:\Users\andre\OneDrive\Escritorio\UDL\Properties\launchSettings.json...
+DRY RUN — solo lectura SQL; no se ejecutó ninguna inserción, actualización ni ALTER.
+Fuente: https://docs.google.com/spreadsheets/d/1sLqNc3NxZUY1K00KOGJhRIq1FKkDEwH4npjuAVDCQvI/edit
+Captura UTC: 2026-09-10T21:58:46.6870000+00:00
+=== JUGADORES ===
+Detectados (filas no vacías): 63
+Usernames únicos normalizados: 63
+Nuevos: 63
+Ya existentes: 0
+Conflictos (Players): 0
+Conflictos de jugador totales (incluye Victors): 37
+Avatares para jugadores nuevos: 0
+Avatares que podrían actualizarse: 0
+
+=== NIVELES ===
+Filas de Victors: 251
+Resueltos correctamente: 248
+No encontrados: 2
+Ambiguos: 0
+Otros conflictos: 1
+
+=== RECORDS ===
+Completions detectadas (celdas no vacías): 819
+Records nuevos: 764
+Records existentes: 0
+Records omitidos: 55
+Duplicados omitidos: 6
+
+=== CONFLICTOS ===
+[Nivel] fila 36: Erebus | AREDL histórico: 426 | Sin coincidencia exacta por nombre normalizado
+  Posibles coincidencias: SQL IdNivel=429, AredlId=c0d26a87-2fa7-4e18-a101-dafce3ba2364, nombre=Erebus (BoldStep), posición actual=426, TwoPlayer=False; SQL IdNivel=680, AredlId=c5e312f6-a46d-4327-b3bf-e7f726a62084, nombre=ErebuS (Platnuu), posición actual=677, TwoPlayer=False
+[Nivel] fila 49: 2‎ 1‎ 1 | AREDL histórico: 539 | Nombre contiene caracteres invisibles/de control; requiere revisión explícita
+  Posibles coincidencias: SQL IdNivel=542, AredlId=be9359f6-bf12-4dc5-9a24-01b07a133037, nombre=2 1 1, posición actual=539, TwoPlayer=False
+[Jugador] fila 64: z | AREDL histórico: 653 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: The Hell Inferno)
+  Posibles coincidencias: ninguna
+[Nivel] fila 134: Heartbeat | AREDL histórico: 1070 | Sin coincidencia exacta por nombre normalizado
+  Posibles coincidencias: SQL IdNivel=1073, AredlId=00acdb43-6791-4033-9eac-fd3c8f0f2fd6, nombre=Heartbeat (KrmaL), posición actual=1070, TwoPlayer=False
+[Jugador] fila 221: Firestorm. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Firestorm
+[Jugador] fila 221: NotDone. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: NotDone
+[Jugador] fila 221: Joaquemix. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Joaquemix
+[Jugador] fila 221: Andres Beltran. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Andres Beltran
+[Jugador] fila 221: Runnie_M. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Runnie_M
+[Jugador] fila 221: LunatikSick. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: LunatikSick
+[Jugador] fila 221: DoYouself. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: DoYouself
+[Jugador] fila 221: Salva. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Salva
+[Jugador] fila 221: Redelekys. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Redelekys
+[Jugador] fila 221: Kuo. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Kuo
+[Jugador] fila 221: Pissa. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Pissa
+[Jugador] fila 221: Donato. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Donato
+[Jugador] fila 221: Garo204. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Garo204
+[Jugador] fila 221: WinRAR. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: WinRAR
+[Jugador] fila 221: Kingus. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Kingus
+[Jugador] fila 221: Overm0n. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Overm0n
+[Jugador] fila 221: Chimpi. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Chimpi
+[Jugador] fila 221: federicotl. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: federicotl
+[Jugador] fila 221: Neuronfish. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Neuronfish
+[Jugador] fila 221: TropixVG. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: TropixVG
+[Jugador] fila 221: Skyllz. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Skyllz
+[Jugador] fila 221: Santiricca. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Santiricca
+[Jugador] fila 221: Gekura. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Gekura
+[Jugador] fila 221: Wesok. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Wesok
+[Jugador] fila 221: Rodro. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Rodro
+[Jugador] fila 221: Digit. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Digit
+[Jugador] fila 221: KadriaN. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: KadriaN
+[Jugador] fila 221: sen. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Sen
+[Jugador] fila 221: MrAlx. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: MrAlx
+[Jugador] fila 221: Creiz. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: Creiz
+[Jugador] fila 221: MaTeO_BeLu. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: MaTeO_BeLu
+[Jugador] fila 221: EmilioRory. | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: Players: EmilioRory
+[Jugador] fila 221: Bruno | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: ninguna
+[Jugador] fila 223: Okrun | AREDL histórico: 1477 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Cataclysm)
+  Posibles coincidencias: ninguna
+[Jugador] fila 241: ThaLion087 | AREDL histórico: 1533 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Niwa)
+  Posibles coincidencias: ninguna
+[Jugador] fila 250: ThaLion087 | AREDL histórico: 1567 | Victor no presente en Players ni resuelto de forma única en SQL (nivel: Acu)
+  Posibles coincidencias: ninguna
+
+=== WARNINGS ===
+[Schema] fila 0: Jugador.AvatarUrl | Columna ausente; se considera NULL para este dry run. El ALTER pendiente no se ejecutó.
+[Victor repetido] fila 53: Astral Divinity | Fif aparece 2 veces; no genera records duplicados.
+[Victor repetido] fila 121: Aftermath | Inc0gnit aparece 2 veces; no genera records duplicados.
+[Victor repetido] fila 223: Cataclysm | WinRAR aparece 2 veces; no genera records duplicados.
+[Victor repetido] fila 223: Cataclysm | Neuronfish aparece 2 veces; no genera records duplicados.
+[Fila de nivel repetida] fila 223: Cataclysm | Nivel repetido en Victors; se deduplican las combinaciones resueltas.
+[Victor repetido] fila 254: Rauchkammer | Santiricca aparece 2 veces; no genera records duplicados.
+
+=== DETALLE JUGADORES ===
+Andres Beltran | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Ardizz | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Belux | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Brusdxll | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Carnanoc | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Chimpi | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Corews | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Creiz | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+cxve | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Digit | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Donato | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+DoYouself | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+EmilioRory | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Facu28 | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+federicotl | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Ferrotheiz | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Fif | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Firestorm | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+FranPes | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+FUZKITA | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Garo204 | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+GDNacho | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Gekura | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Geroventi31 | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Inc0gnit | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Joaquemix | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Joako | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+KadriaN | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Kingus | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Kuo | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+LunatikSick | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+MaTeO_BeLu | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+MecaSony | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+MrAlx | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Nahuel2998 | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Neuronfish | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+NotDone | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Overm0n | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Pissa | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Ramii | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Rals | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Redelekys | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Rev121 | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Rodro | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Ruitsu | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Runnie_M | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Salva | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Santiricca | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Sen | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Skyllz | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+SVib21 | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+sunnyagus | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Thiago | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+TropixVG | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Tryken | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Wesok | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+WinRAR | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+zDarki | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Kikololcito | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+Okarun | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+JoacoGD14 | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+peque | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+lo4ma | Nuevo | IdJugador=nuevo | Avatar: Sin avatar de origen | URL propuesta=NULL
+
+=== DETALLE RECORDS (100%) ===
+Victors fila 4 | Ardizz + Sakupen Circles | IdNivel=46 | Nuevo | 
+Victors fila 5 | Neuronfish + BEELINE (Solo) | IdNivel=108 | Nuevo | 
+Victors fila 6 | Santiricca + Tartarus | IdNivel=111 | Nuevo | 
+Victors fila 6 | Salva + Tartarus | IdNivel=111 | Nuevo | 
+Victors fila 7 | Santiricca + Zodiac | IdNivel=167 | Nuevo | 
+Victors fila 7 | Fif + Zodiac | IdNivel=167 | Nuevo | 
+Victors fila 8 | gekura + Goober Rage Stage | IdNivel=174 | Nuevo | 
+Victors fila 9 | gekura + Frost Spirit | IdNivel=180 | Nuevo | 
+Victors fila 10 | cxve + Thinking Space | IdNivel=184 | Nuevo | 
+Victors fila 11 | Pissa + Renevant | IdNivel=187 | Nuevo | 
+Victors fila 12 | Salva + Crimson Planet | IdNivel=195 | Nuevo | 
+Victors fila 13 | sunnyagus + Cognition | IdNivel=203 | Nuevo | 
+Victors fila 13 | peque + Cognition | IdNivel=203 | Nuevo | 
+Victors fila 14 | Santiricca + Call Me Maybe | IdNivel=210 | Nuevo | 
+Victors fila 15 | LunatikSick + SUPERHATEMEWORLD | IdNivel=224 | Nuevo | 
+Victors fila 15 | Pissa + SUPERHATEMEWORLD | IdNivel=224 | Nuevo | 
+Victors fila 16 | cxve + Shardscapes | IdNivel=227 | Nuevo | 
+Victors fila 17 | Neuronfish + Sides Of My Mind (Solo) | IdNivel=229 | Nuevo | 
+Victors fila 18 | Andres Beltran + Bloodlust | IdNivel=256 | Nuevo | 
+Victors fila 18 | Santiricca + Bloodlust | IdNivel=256 | Nuevo | 
+Victors fila 18 | Fif + Bloodlust | IdNivel=256 | Nuevo | 
+Victors fila 19 | Chimpi + Nhelv | IdNivel=267 | Nuevo | 
+Victors fila 19 | DoYouself + Nhelv | IdNivel=267 | Nuevo | 
+Victors fila 20 | Rodro + Congregation | IdNivel=273 | Nuevo | 
+Victors fila 20 | Gekura + Congregation | IdNivel=273 | Nuevo | 
+Victors fila 20 | Santiricca + Congregation | IdNivel=273 | Nuevo | 
+Victors fila 21 | Geroventi31 + Knights of Thunder | IdNivel=281 | Nuevo | 
+Victors fila 22 | peque + Kowareta | IdNivel=303 | Nuevo | 
+Victors fila 23 | Joaquemix + Arctic Lights | IdNivel=312 | Nuevo | 
+Victors fila 23 | cxve + Arctic Lights | IdNivel=312 | Nuevo | 
+Victors fila 23 | Andres Beltran + Arctic Lights | IdNivel=312 | Nuevo | 
+Victors fila 24 | Gekura + Plasma Pulse Finale | IdNivel=316 | Nuevo | 
+Victors fila 25 | Sunnyagus + Spectrum Cyclone | IdNivel=318 | Nuevo | 
+Victors fila 26 | Gekura + Time Extreme | IdNivel=362 | Nuevo | 
+Victors fila 27 | Redelekys + Wasureta | IdNivel=363 | Nuevo | 
+Victors fila 27 | FranPes + Wasureta | IdNivel=363 | Nuevo | 
+Victors fila 27 | Geroventi31 + Wasureta | IdNivel=363 | Nuevo | 
+Victors fila 27 | Thiago + Wasureta | IdNivel=363 | Nuevo | 
+Victors fila 27 | SVib21 + Wasureta | IdNivel=363 | Nuevo | 
+Victors fila 27 | peque + Wasureta | IdNivel=363 | Nuevo | 
+Victors fila 28 | LunatikSick + Sonic Wave Rebirth | IdNivel=379 | Nuevo | 
+Victors fila 28 | Santiricca + Sonic Wave Rebirth | IdNivel=379 | Nuevo | 
+Victors fila 28 | Sen + Sonic Wave Rebirth | IdNivel=379 | Nuevo | 
+Victors fila 28 | cxve + Sonic Wave Rebirth | IdNivel=379 | Nuevo | 
+Victors fila 29 | Joaquemix + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 29 | Andres Beltran + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 29 | LunatikSick + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 29 | Salva + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 29 | Santiricca + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 29 | Pissa + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 29 | Sen + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 29 | Fif + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 29 | Belux + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 29 | cxve + Sonic Wave | IdNivel=380 | Nuevo | 
+Victors fila 30 | Andres Beltran + Yatagarasu | IdNivel=389 | Nuevo | 
+Victors fila 30 | LunatikSick + Yatagarasu | IdNivel=389 | Nuevo | 
+Victors fila 30 | Santiricca + Yatagarasu | IdNivel=389 | Nuevo | 
+Victors fila 30 | Fif + Yatagarasu | IdNivel=389 | Nuevo | 
+Victors fila 30 | Sunnyagus + Yatagarasu | IdNivel=389 | Nuevo | 
+Victors fila 31 | Pissa + xo | IdNivel=405 | Nuevo | 
+Victors fila 31 | Fif + xo | IdNivel=405 | Nuevo | 
+Victors fila 31 | Brusdxll + xo | IdNivel=405 | Nuevo | 
+Victors fila 31 | Santiricca + xo | IdNivel=405 | Nuevo | 
+Victors fila 32 | Redelekys + GONER | IdNivel=414 | Nuevo | 
+Victors fila 33 | DoYouself + Sunset Sandstorm | IdNivel=398 | Nuevo | 
+Victors fila 34 | cxve + Generic Wave | IdNivel=417 | Nuevo | 
+Victors fila 35 | Geroventi31 + Freedom08 | IdNivel=428 | Nuevo | 
+Victors fila 36 | Andres Beltran + Erebus | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 36 | LunatikSick + Erebus | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 36 | Santiricca + Erebus | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 36 | Fif + Erebus | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 36 | Gekura + Erebus | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 37 | LunatikSick + Devil Vortex | IdNivel=457 | Nuevo | 
+Victors fila 38 | Skyllz + Catalyze | IdNivel=455 | Nuevo | 
+Victors fila 39 | Redelekys + Digital Descent | IdNivel=489 | Nuevo | 
+Victors fila 39 | Skyllz + Digital Descent | IdNivel=489 | Nuevo | 
+Victors fila 39 | Santiricca + Digital Descent | IdNivel=489 | Nuevo | 
+Victors fila 39 | SVib21 + Digital Descent | IdNivel=489 | Nuevo | 
+Victors fila 40 | Overm0n + Stalemate Redux | IdNivel=490 | Nuevo | 
+Victors fila 40 | Sunnyagus + Stalemate Redux | IdNivel=490 | Nuevo | 
+Victors fila 41 | Joaquemix + Omicron | IdNivel=492 | Nuevo | 
+Victors fila 42 | Redelekys + Xronier | IdNivel=493 | Nuevo | 
+Victors fila 43 | creiz + Jard Factory | IdNivel=497 | Nuevo | 
+Victors fila 44 | Fif + Adelucid | IdNivel=499 | Nuevo | 
+Victors fila 44 | Garo204 + Adelucid | IdNivel=499 | Nuevo | 
+Victors fila 44 | Geroventi31 + Adelucid | IdNivel=499 | Nuevo | 
+Victors fila 45 | EmilioRory + Killbot | IdNivel=515 | Nuevo | 
+Victors fila 46 | GDNacho + Delta Interface | IdNivel=519 | Nuevo | 
+Victors fila 46 | SVib21 + Delta Interface | IdNivel=519 | Nuevo | 
+Victors fila 47 | GDNacho + Artificial Ascent | IdNivel=523 | Nuevo | 
+Victors fila 47 | Joaquemix + Artificial Ascent | IdNivel=523 | Nuevo | 
+Victors fila 47 | Skyllz + Artificial Ascent | IdNivel=523 | Nuevo | 
+Victors fila 47 | KadriaN + Artificial Ascent | IdNivel=523 | Nuevo | 
+Victors fila 47 | Gekura + Artificial Ascent | IdNivel=523 | Nuevo | 
+Victors fila 47 | Fif + Artificial Ascent | IdNivel=523 | Nuevo | 
+Victors fila 48 | Fif + Low Death | IdNivel=532 | Nuevo | 
+Victors fila 48 | cxve + Low Death | IdNivel=532 | Nuevo | 
+Victors fila 48 | Brusdxll + Low Death | IdNivel=532 | Nuevo | 
+Victors fila 49 | Joaquemix + 2‎ 1‎ 1 | IdNivel=sin resolver | Omitido | Nombre contiene caracteres invisibles/de control; requiere revisión explícita
+Victors fila 50 | Overm0n + Quantum Processing | IdNivel=557 | Nuevo | 
+Victors fila 50 | Andres Beltran + Quantum Processing | IdNivel=557 | Nuevo | 
+Victors fila 50 | Pissa + Quantum Processing | IdNivel=557 | Nuevo | 
+Victors fila 50 | KadriaN + Quantum Processing | IdNivel=557 | Nuevo | 
+Victors fila 50 | cxve + Quantum Processing | IdNivel=557 | Nuevo | 
+Victors fila 50 | Gekura + Quantum Processing | IdNivel=557 | Nuevo | 
+Victors fila 50 | Fif + Quantum Processing | IdNivel=557 | Nuevo | 
+Victors fila 50 | Santiricca + Quantum Processing | IdNivel=557 | Nuevo | 
+Victors fila 51 | DoYouself + Black Blizzard | IdNivel=563 | Nuevo | 
+Victors fila 51 | WinRAR + Black Blizzard | IdNivel=563 | Nuevo | 
+Victors fila 51 | Chimpi + Black Blizzard | IdNivel=563 | Nuevo | 
+Victors fila 51 | Santiricca + Black Blizzard | IdNivel=563 | Nuevo | 
+Victors fila 51 | Brusdxll + Black Blizzard | IdNivel=563 | Nuevo | 
+Victors fila 52 | cxve + SECTOR 19 | IdNivel=567 | Nuevo | 
+Victors fila 53 | Santiricca + Astral Divinity | IdNivel=574 | Nuevo | 
+Victors fila 53 | Tryken + Astral Divinity | IdNivel=574 | Nuevo | 
+Victors fila 53 | Fif + Astral Divinity | IdNivel=574 | Nuevo | 
+Victors fila 53 | Fif + Astral Divinity | IdNivel=574 | Omitido | Combinación Jugador + Nivel repetida en la planilla
+Victors fila 54 | LunatikSick + MISFIRE | IdNivel=582 | Nuevo | 
+Victors fila 55 | Santiricca + BuTiTi III | IdNivel=589 | Nuevo | 
+Victors fila 56 | Neuronfish + Magnificent Gaps | IdNivel=606 | Nuevo | 
+Victors fila 57 | cxve + Hatred | IdNivel=618 | Nuevo | 
+Victors fila 58 | Joaquemix + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | cxve + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | Salva + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | LunatikSick + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | Skyllz + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | TropixVG + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | Santiricca + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | Belux + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | Pissa + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | Sen + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 58 | MaTeO_BeLu + Auditory Breaker | IdNivel=631 | Nuevo | 
+Victors fila 59 | Joaquemix + Surge of the Shield | IdNivel=638 | Nuevo | 
+Victors fila 60 | cxve + Necrocide | IdNivel=642 | Nuevo | 
+Victors fila 61 | Redelekys + Hyper Paradox | IdNivel=643 | Nuevo | 
+Victors fila 61 | cxve + Hyper Paradox | IdNivel=643 | Nuevo | 
+Victors fila 62 | Fif + Carmine Cascade | IdNivel=644 | Nuevo | 
+Victors fila 63 | Chimpi + SubSonic | IdNivel=647 | Nuevo | 
+Victors fila 63 | Fif + SubSonic | IdNivel=647 | Nuevo | 
+Victors fila 64 | creiz + The Hell Inferno | IdNivel=656 | Nuevo | 
+Victors fila 64 | z + The Hell Inferno | IdNivel=656 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 65 | Sunnyagus + Endless Dream | IdNivel=660 | Nuevo | 
+Victors fila 66 | Redelekys + Boogie | IdNivel=662 | Nuevo | 
+Victors fila 67 | Joaquemix + Dolos | IdNivel=674 | Nuevo | 
+Victors fila 67 | DoYouself + Dolos | IdNivel=674 | Nuevo | 
+Victors fila 68 | cxve + Ithacropolis | IdNivel=676 | Nuevo | 
+Victors fila 69 | Redelekys + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 69 | LunatikSick + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 69 | Chimpi + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 69 | Skyllz + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 69 | Santiricca + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 69 | KadriaN + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 69 | cxve + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 69 | DoYouself + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 69 | Inc0gnit + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 69 | Fif + Athanatos | IdNivel=687 | Nuevo | 
+Victors fila 70 | Neuronfish + Gentlemens Clique (Solo) | IdNivel=692 | Nuevo | 
+Victors fila 71 | Redelekys + Wild Rose | IdNivel=693 | Nuevo | 
+Victors fila 72 | Skyllz + Infernal Abyss | IdNivel=715 | Nuevo | 
+Victors fila 72 | DoYouself + Infernal Abyss | IdNivel=715 | Nuevo | 
+Victors fila 72 | cxve + Infernal Abyss | IdNivel=715 | Nuevo | 
+Victors fila 72 | Fif + Infernal Abyss | IdNivel=715 | Nuevo | 
+Victors fila 73 | cxve + Cryothorn Hell | IdNivel=708 | Nuevo | 
+Victors fila 74 | Neuronfish + dance (Solo) | IdNivel=713 | Nuevo | 
+Victors fila 75 | Redelekys + hot rod | IdNivel=720 | Nuevo | 
+Victors fila 75 | Neuronfish + hot rod | IdNivel=720 | Nuevo | 
+Victors fila 75 | EmilioRory + hot rod | IdNivel=720 | Nuevo | 
+Victors fila 75 | DoYouself + hot rod | IdNivel=720 | Nuevo | 
+Victors fila 75 | Geroventi31 + hot rod | IdNivel=720 | Nuevo | 
+Victors fila 76 | Neuronfish + Based Gang (Solo) | IdNivel=721 | Nuevo | 
+Victors fila 77 | Santiricca + WcropoliX | IdNivel=711 | Nuevo | 
+Victors fila 77 | Fif + WcropoliX | IdNivel=711 | Nuevo | 
+Victors fila 77 | cxve + WcropoliX | IdNivel=711 | Nuevo | 
+Victors fila 78 | Neuronfish + Bang Gang (Solo) | IdNivel=730 | Nuevo | 
+Victors fila 79 | Inc0gnit + Carnage Mode | IdNivel=690 | Nuevo | 
+Victors fila 79 | cxve + Carnage Mode | IdNivel=690 | Nuevo | 
+Victors fila 80 | GDNacho + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Andres Beltran + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | LunatikSick + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Joaquemix + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | DoYouself + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | WinRAR + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Pissa + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Neuronfish + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Santiricca + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Overm0n + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Gekura + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | cxve + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | SVib21 + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Inc0gnit + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Fif + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 80 | Sunnyagus + Blade of Justice | IdNivel=741 | Nuevo | 
+Victors fila 81 | Joaquemix + Phobos | IdNivel=748 | Nuevo | 
+Victors fila 81 | LunatikSick + Phobos | IdNivel=748 | Nuevo | 
+Victors fila 81 | Andres Beltran + Phobos | IdNivel=748 | Nuevo | 
+Victors fila 81 | WinRAR + Phobos | IdNivel=748 | Nuevo | 
+Victors fila 81 | Santiricca + Phobos | IdNivel=748 | Nuevo | 
+Victors fila 81 | DoYouself + Phobos | IdNivel=748 | Nuevo | 
+Victors fila 81 | Fif + Phobos | IdNivel=748 | Nuevo | 
+Victors fila 81 | cxve + Phobos | IdNivel=748 | Nuevo | 
+Victors fila 82 | cxve + Asmodeus | IdNivel=751 | Nuevo | 
+Victors fila 83 | Andres Beltran + Sakupen Hell | IdNivel=761 | Nuevo | 
+Victors fila 83 | Joaquemix + Sakupen Hell | IdNivel=761 | Nuevo | 
+Victors fila 83 | LunatikSick + Sakupen Hell | IdNivel=761 | Nuevo | 
+Victors fila 83 | KadriaN + Sakupen Hell | IdNivel=761 | Nuevo | 
+Victors fila 83 | Fif + Sakupen Hell | IdNivel=761 | Nuevo | 
+Victors fila 83 | cxve + Sakupen Hell | IdNivel=761 | Nuevo | 
+Victors fila 84 | Nahuel2998 + Betrayal of Fate | IdNivel=771 | Nuevo | 
+Victors fila 84 | Gekura + Betrayal of Fate | IdNivel=771 | Nuevo | 
+Victors fila 84 | Inc0gnit + Betrayal of Fate | IdNivel=771 | Nuevo | 
+Victors fila 84 | Fif + Betrayal of Fate | IdNivel=771 | Nuevo | 
+Victors fila 85 | Joaquemix + Tenth Circle | IdNivel=782 | Nuevo | 
+Victors fila 85 | Redelekys + Tenth Circle | IdNivel=782 | Nuevo | 
+Victors fila 85 | cxve + Tenth Circle | IdNivel=782 | Nuevo | 
+Victors fila 86 | Skyllz + Fusion Z | IdNivel=786 | Nuevo | 
+Victors fila 86 | Brusdxll + Fusion Z | IdNivel=786 | Nuevo | 
+Victors fila 87 | DoYouself + Carcano | IdNivel=789 | Nuevo | 
+Victors fila 87 | Geroventi31 + Carcano | IdNivel=789 | Nuevo | 
+Victors fila 88 | Joaquemix + Epsilon | IdNivel=794 | Nuevo | 
+Victors fila 89 | federicotl + Carbon Fiber | IdNivel=797 | Nuevo | 
+Victors fila 89 | Geroventi31 + Carbon Fiber | IdNivel=797 | Nuevo | 
+Victors fila 90 | Redelekys + OPSM1 | IdNivel=798 | Nuevo | 
+Victors fila 91 | KadriaN + Molten Mercury | IdNivel=799 | Nuevo | 
+Victors fila 92 | LunatikSick + Untitled | IdNivel=822 | Nuevo | 
+Victors fila 93 | Skyllz + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | Runnie_M + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | LunatikSick + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | Redelekys + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | DoYouself + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | Pissa + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | EmilioRory + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | Wesok + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | Creiz + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | Neuronfish + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | KadriaN + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | FranPes + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | Chimpi + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | Salva + Moment | IdNivel=826 | Nuevo | 
+Victors fila 93 | sunnyagus + Moment | IdNivel=826 | Nuevo | 
+Victors fila 94 | cxve + Azurite (Royen) | IdNivel=827 | Nuevo | 
+Victors fila 95 | Ferrotheiz + Tempest Tornado | IdNivel=832 | Nuevo | 
+Victors fila 96 | Redelekys + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 96 | DoYouself + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 96 | Geroventi31 + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 96 | Neuronfish + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 96 | Creiz + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 96 | KadriaN + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 96 | FranPes + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 96 | EmilioRory + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 96 | Okarun + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 96 | Thiago + Gravity | IdNivel=834 | Nuevo | 
+Victors fila 97 | Joaquemix + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | GDNacho + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Skyllz + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | LunatikSick + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Tryken + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Redelekys + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Rodro + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | DoYouself + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Runnie_M + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | WinRAR + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Salva + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Andres Beltran + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Kuo + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Pissa + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Geroventi31 + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Overm0n + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Chimpi + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | TropixVG + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Nahuel2998 + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | federicotl + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Santiricca + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Belux + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | KadriaN + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | FranPes + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Creiz + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | MaTeO_BeLu + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | sen + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Svib21 + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Rals + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | FUZKITA + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Fif + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | zDarki + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Brusdxll + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Sunnyagus + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Gekura + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Inc0gnit + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | cxve + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 97 | Thiago + Bloodbath | IdNivel=835 | Nuevo | 
+Victors fila 98 | Joaquemix + Idols | IdNivel=841 | Nuevo | 
+Victors fila 98 | Chimpi + Idols | IdNivel=841 | Nuevo | 
+Victors fila 98 | Santiricca + Idols | IdNivel=841 | Nuevo | 
+Victors fila 98 | Geroventi31 + Idols | IdNivel=841 | Nuevo | 
+Victors fila 98 | Brusdxll + Idols | IdNivel=841 | Nuevo | 
+Victors fila 98 | FranPes + Idols | IdNivel=841 | Nuevo | 
+Victors fila 98 | Fif + Idols | IdNivel=841 | Nuevo | 
+Victors fila 99 | Brusdxll + Quaoar (viprin) | IdNivel=846 | Nuevo | 
+Victors fila 100 | Fif + The Hell Factory | IdNivel=850 | Nuevo | 
+Victors fila 100 | Gekura + The Hell Factory | IdNivel=850 | Nuevo | 
+Victors fila 101 | Redelekys + Down Bass | IdNivel=857 | Nuevo | 
+Victors fila 101 | Pissa + Down Bass | IdNivel=857 | Nuevo | 
+Victors fila 101 | MaTeO_BeLu + Down Bass | IdNivel=857 | Nuevo | 
+Victors fila 101 | cxve + Down Bass | IdNivel=857 | Nuevo | 
+Victors fila 101 | sunnyagus + Down Bass | IdNivel=857 | Nuevo | 
+Victors fila 102 | LunatikSick + Barbaros Finale | IdNivel=866 | Nuevo | 
+Victors fila 102 | Redelekys + Barbaros Finale | IdNivel=866 | Nuevo | 
+Victors fila 103 | Neuronfish + i just wish i could | IdNivel=868 | Nuevo | 
+Victors fila 104 | LunatikSick + Prismatic Haze | IdNivel=869 | Nuevo | 
+Victors fila 104 | Neuronfish + Prismatic Haze | IdNivel=869 | Nuevo | 
+Victors fila 104 | Redelekys + Prismatic Haze | IdNivel=869 | Nuevo | 
+Victors fila 105 | cxve + Sakupen Joy | IdNivel=870 | Nuevo | 
+Victors fila 106 | Geroventi31 + Heavens Door | IdNivel=874 | Nuevo | 
+Victors fila 107 | Skyllz + A Bizarre Phantasm | IdNivel=875 | Nuevo | 
+Victors fila 107 | Chimpi + A Bizarre Phantasm | IdNivel=875 | Nuevo | 
+Victors fila 107 | Fif + A Bizarre Phantasm | IdNivel=875 | Nuevo | 
+Victors fila 107 | Gekura + A Bizarre Phantasm | IdNivel=875 | Nuevo | 
+Victors fila 107 | cxve + A Bizarre Phantasm | IdNivel=875 | Nuevo | 
+Victors fila 108 | Gekura + Artificial Ideology | IdNivel=879 | Nuevo | 
+Victors fila 109 | Santiricca + Conical Depression | IdNivel=886 | Nuevo | 
+Victors fila 109 | creiz + Conical Depression | IdNivel=886 | Nuevo | 
+Victors fila 109 | Fif + Conical Depression | IdNivel=886 | Nuevo | 
+Victors fila 109 | Gekura + Conical Depression | IdNivel=886 | Nuevo | 
+Victors fila 109 | cxve + Conical Depression | IdNivel=886 | Nuevo | 
+Victors fila 110 | DoYouself + EKO | IdNivel=893 | Nuevo | 
+Victors fila 110 | LunatikSick + EKO | IdNivel=893 | Nuevo | 
+Victors fila 110 | Geroventi31 + EKO | IdNivel=893 | Nuevo | 
+Victors fila 110 | Ferrotheiz + EKO | IdNivel=893 | Nuevo | 
+Victors fila 111 | Gekura + Callisto | IdNivel=906 | Nuevo | 
+Victors fila 112 | LunatikSick + Arctic Arena | IdNivel=918 | Nuevo | 
+Victors fila 112 | cxve + Arctic Arena | IdNivel=918 | Nuevo | 
+Victors fila 113 | Neuronfish + QDYNAMIX | IdNivel=921 | Nuevo | 
+Victors fila 114 | Neuronfish + Overtime | IdNivel=931 | Nuevo | 
+Victors fila 114 | federicotl + Overtime | IdNivel=931 | Nuevo | 
+Victors fila 114 | MaTeO_BeLu + Overtime | IdNivel=931 | Nuevo | 
+Victors fila 114 | Brusdxll + Overtime | IdNivel=931 | Nuevo | 
+Victors fila 115 | DoYouself + Karma | IdNivel=932 | Nuevo | 
+Victors fila 115 | Geroventi31 + Karma | IdNivel=932 | Nuevo | 
+Victors fila 115 | Brusdxll + Karma | IdNivel=932 | Nuevo | 
+Victors fila 116 | KadriaN + Ch1ll Puddy | IdNivel=949 | Nuevo | 
+Victors fila 117 | Redelekys + Lovers Sadness | IdNivel=950 | Nuevo | 
+Victors fila 118 | Geroventi31 + Lunar | IdNivel=971 | Nuevo | 
+Victors fila 119 | Pissa + Solstice | IdNivel=979 | Nuevo | 
+Victors fila 120 | LunatikSick + Sigma Interface | IdNivel=990 | Nuevo | 
+Victors fila 121 | Skyllz + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | LunatikSick + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Redelekys + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | WinRAR + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | DoYouself + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Andres Beltran + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Garo204 + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Pissa + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Overm0n + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | TropixVG + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Santiricca + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Gekura + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Inc0gnit + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Fif + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Inc0gnit + Aftermath | IdNivel=991 | Omitido | Combinación Jugador + Nivel repetida en la planilla
+Victors fila 121 | SVib21 + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Geroventi31 + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Sunnyagus + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 121 | Brusdxll + Aftermath | IdNivel=991 | Nuevo | 
+Victors fila 122 | Neuronfish + Perfect in Place | IdNivel=996 | Nuevo | 
+Victors fila 123 | sunnyagus + ChopStep | IdNivel=998 | Nuevo | 
+Victors fila 124 | Redelekys + Cat Planet | IdNivel=1003 | Nuevo | 
+Victors fila 124 | Neuronfish + Cat Planet | IdNivel=1003 | Nuevo | 
+Victors fila 124 | cxve + Cat Planet | IdNivel=1003 | Nuevo | 
+Victors fila 124 | MaTeO_BeLu + Cat Planet | IdNivel=1003 | Nuevo | 
+Victors fila 124 | Geroventi31 + Cat Planet | IdNivel=1003 | Nuevo | 
+Victors fila 125 | Gekura + Plasma Pulse III | IdNivel=1008 | Nuevo | 
+Victors fila 125 | Inc0gnit + Plasma Pulse III | IdNivel=1008 | Nuevo | 
+Victors fila 125 | Fif + Plasma Pulse III | IdNivel=1008 | Nuevo | 
+Victors fila 125 | sunnyagus + Plasma Pulse III | IdNivel=1008 | Nuevo | 
+Victors fila 126 | DoYouself + Panasonic | IdNivel=1011 | Nuevo | 
+Victors fila 126 | Chimpi + Panasonic | IdNivel=1011 | Nuevo | 
+Victors fila 126 | Santiricca + Panasonic | IdNivel=1011 | Nuevo | 
+Victors fila 126 | Fif + Panasonic | IdNivel=1011 | Nuevo | 
+Victors fila 126 | cxve + Panasonic | IdNivel=1011 | Nuevo | 
+Victors fila 127 | Neuronfish + Maybe Possibly Thing | IdNivel=1022 | Nuevo | 
+Victors fila 127 | Chimpi + Maybe Possibly Thing | IdNivel=1022 | Nuevo | 
+Victors fila 128 | cxve + Annihilation Nation | IdNivel=1023 | Nuevo | 
+Victors fila 129 | DoYouself + Manic Machine | IdNivel=1024 | Nuevo | 
+Victors fila 129 | Neuronfish + Manic Machine | IdNivel=1024 | Nuevo | 
+Victors fila 129 | EmilioRory + Manic Machine | IdNivel=1024 | Nuevo | 
+Victors fila 130 | Neuronfish + Warning | IdNivel=1085 | Nuevo | 
+Victors fila 130 | KadriaN + Warning | IdNivel=1085 | Nuevo | 
+Victors fila 131 | Geroventi31 + Cassette | IdNivel=1065 | Nuevo | 
+Victors fila 132 | Andres Beltran + Glide | IdNivel=1066 | Nuevo | 
+Victors fila 132 | Facu28 + Glide | IdNivel=1066 | Nuevo | 
+Victors fila 132 | Runnie_M + Glide | IdNivel=1066 | Nuevo | 
+Victors fila 132 | DoYouself + Glide | IdNivel=1066 | Nuevo | 
+Victors fila 133 | Ferrotheiz + SLAY MOMENT | IdNivel=1072 | Nuevo | 
+Victors fila 134 | cxve + Heartbeat | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 134 | WinRAR + Heartbeat | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 134 | Chimpi + Heartbeat | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 134 | Santiricca + Heartbeat | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 134 | creiz + Heartbeat | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 134 | Fif + Heartbeat | IdNivel=sin resolver | Omitido | Sin coincidencia exacta por nombre normalizado
+Victors fila 135 | sunnyagus + Daydream | IdNivel=1086 | Nuevo | 
+Victors fila 136 | Redelekys + VIRTUE | IdNivel=1095 | Nuevo | 
+Victors fila 137 | cxve + Under Lavaland | IdNivel=1096 | Nuevo | 
+Victors fila 138 | Ferrotheiz + Myocardia | IdNivel=1097 | Nuevo | 
+Victors fila 139 | MaTeO_BeLu + Wacky McWhackface v2 | IdNivel=1105 | Nuevo | 
+Victors fila 139 | Geroventi31 + Wacky McWhackface v2 | IdNivel=1105 | Nuevo | 
+Victors fila 139 | DoYouself + Wacky McWhackface v2 | IdNivel=1105 | Nuevo | 
+Victors fila 140 | cxve + Mjolnir | IdNivel=1118 | Nuevo | 
+Victors fila 141 | Santiricca + 1330X | IdNivel=1125 | Nuevo | 
+Victors fila 142 | Santiricca + Pumped Up Kicks | IdNivel=1134 | Nuevo | 
+Victors fila 142 | Fif + Pumped Up Kicks | IdNivel=1134 | Nuevo | 
+Victors fila 143 | Redelekys + Cupid | IdNivel=1140 | Nuevo | 
+Victors fila 144 | cxve + Skrrah | IdNivel=1145 | Nuevo | 
+Victors fila 145 | cxve + Convulsing Light | IdNivel=1159 | Nuevo | 
+Victors fila 146 | Redelekys + Rivers of Nazareth | IdNivel=1160 | Nuevo | 
+Victors fila 147 | LunatikSick + Shukufuku | IdNivel=1162 | Nuevo | 
+Victors fila 147 | DoYouself + Shukufuku | IdNivel=1162 | Nuevo | 
+Victors fila 147 | Redelekys + Shukufuku | IdNivel=1162 | Nuevo | 
+Victors fila 148 | Santiricca + NecropoliX | IdNivel=1173 | Nuevo | 
+Victors fila 148 | cxve + NecropoliX | IdNivel=1173 | Nuevo | 
+Victors fila 149 | Geroventi31 + nowdead | IdNivel=1180 | Nuevo | 
+Victors fila 150 | Gekura + Artificial Dream | IdNivel=1182 | Nuevo | 
+Victors fila 151 | Ferrotheiz + SUBVERSIVE | IdNivel=1196 | Nuevo | 
+Victors fila 152 | cxve + Fexty | IdNivel=1194 | Nuevo | 
+Victors fila 153 | Ferrotheiz + Marlboro reds | IdNivel=1198 | Nuevo | 
+Victors fila 154 | EmilioRory + Steel Terrors | IdNivel=1202 | Nuevo | 
+Victors fila 155 | GDNacho + The Ultimate Phase | IdNivel=1205 | Nuevo | 
+Victors fila 155 | Andres Beltran + The Ultimate Phase | IdNivel=1205 | Nuevo | 
+Victors fila 155 | Skyllz + The Ultimate Phase | IdNivel=1205 | Nuevo | 
+Victors fila 155 | WinRAR + The Ultimate Phase | IdNivel=1205 | Nuevo | 
+Victors fila 155 | Santiricca + The Ultimate Phase | IdNivel=1205 | Nuevo | 
+Victors fila 155 | Redelekys + The Ultimate Phase | IdNivel=1205 | Nuevo | 
+Victors fila 155 | Fif + The Ultimate Phase | IdNivel=1205 | Nuevo | 
+Victors fila 155 | cxve + The Ultimate Phase | IdNivel=1205 | Nuevo | 
+Victors fila 156 | EmilioRory + headlock | IdNivel=1228 | Nuevo | 
+Victors fila 156 | Neuronfish + headlock | IdNivel=1228 | Nuevo | 
+Victors fila 157 | LunatikSick + Acrozis | IdNivel=1221 | Nuevo | 
+Victors fila 158 | WinRAR + BYE | IdNivel=1233 | Nuevo | 
+Victors fila 159 | Santiricca + Broken Signal | IdNivel=1237 | Nuevo | 
+Victors fila 159 | Geroventi31 + Broken Signal | IdNivel=1237 | Nuevo | 
+Victors fila 159 | Brusdxll + Broken Signal | IdNivel=1237 | Nuevo | 
+Victors fila 160 | Skyllz + Volume | IdNivel=1239 | Nuevo | 
+Victors fila 161 | EmilioRory + reverence | IdNivel=1243 | Nuevo | 
+Victors fila 161 | Redelekys + reverence | IdNivel=1243 | Nuevo | 
+Victors fila 161 | FranPes + reverence | IdNivel=1243 | Nuevo | 
+Victors fila 162 | Ruitsu + Napalm | IdNivel=1247 | Nuevo | 
+Victors fila 162 | Redelekys + Napalm | IdNivel=1247 | Nuevo | 
+Victors fila 163 | Geroventi31 + Stellaluna | IdNivel=1248 | Nuevo | 
+Victors fila 163 | Creiz + Stellaluna | IdNivel=1248 | Nuevo | 
+Victors fila 163 | Santiricca + Stellaluna | IdNivel=1248 | Nuevo | 
+Victors fila 163 | SVib21 + Stellaluna | IdNivel=1248 | Nuevo | 
+Victors fila 164 | Pissa + Tech Manifestation | IdNivel=1250 | Nuevo | 
+Victors fila 165 | Santiricca + ElectroLux | IdNivel=1252 | Nuevo | 
+Victors fila 166 | Pissa + Interstellar Entropy | IdNivel=1253 | Nuevo | 
+Victors fila 167 | Chimpi + Retention | IdNivel=1258 | Nuevo | 
+Victors fila 167 | KadriaN + Retention | IdNivel=1258 | Nuevo | 
+Victors fila 167 | Brusdxll + Retention | IdNivel=1258 | Nuevo | 
+Victors fila 168 | WinRAR + Falling Up | IdNivel=1259 | Nuevo | 
+Victors fila 168 | Skyllz + Falling Up | IdNivel=1259 | Nuevo | 
+Victors fila 168 | Overm0n + Falling Up | IdNivel=1259 | Nuevo | 
+Victors fila 168 | Santiricca + Falling Up | IdNivel=1259 | Nuevo | 
+Victors fila 168 | Fif + Falling Up | IdNivel=1259 | Nuevo | 
+Victors fila 168 | Brusdxll + Falling Up | IdNivel=1259 | Nuevo | 
+Victors fila 168 | sunnyagus + Falling Up | IdNivel=1259 | Nuevo | 
+Victors fila 168 | cxve + Falling Up | IdNivel=1259 | Nuevo | 
+Victors fila 168 | lo4ma + Falling Up | IdNivel=1259 | Nuevo | 
+Victors fila 169 | Chimpi + La Llorona | IdNivel=1264 | Nuevo | 
+Victors fila 169 | Santiricca + La Llorona | IdNivel=1264 | Nuevo | 
+Victors fila 170 | Neuronfish + ZOOOOOOOOOOOOOOOOOOM | IdNivel=1273 | Nuevo | 
+Victors fila 170 | Redelekys + ZOOOOOOOOOOOOOOOOOOM | IdNivel=1273 | Nuevo | 
+Victors fila 171 | LunatikSick + Red World Rebirth | IdNivel=1276 | Nuevo | 
+Victors fila 171 | WinRAR + Red World Rebirth | IdNivel=1276 | Nuevo | 
+Victors fila 171 | Santiricca + Red World Rebirth | IdNivel=1276 | Nuevo | 
+Victors fila 171 | KadriaN + Red World Rebirth | IdNivel=1276 | Nuevo | 
+Victors fila 171 | Fif + Red World Rebirth | IdNivel=1276 | Nuevo | 
+Victors fila 171 | Gekura + Red World Rebirth | IdNivel=1276 | Nuevo | 
+Victors fila 171 | Inc0gnit + Red World Rebirth | IdNivel=1276 | Nuevo | 
+Victors fila 171 | cxve + Red World Rebirth | IdNivel=1276 | Nuevo | 
+Victors fila 172 | Brusdxll + Backlights | IdNivel=1277 | Nuevo | 
+Victors fila 173 | Redelekys + YIPPEE | IdNivel=1278 | Nuevo | 
+Victors fila 174 | WinRAR + Heart Attack | IdNivel=1286 | Nuevo | 
+Victors fila 175 | DoYouself + Dismal Duststorm | IdNivel=1288 | Nuevo | 
+Victors fila 176 | Brusdxll + Breakout | IdNivel=1293 | Nuevo | 
+Victors fila 177 | Neuronfish + Zettabyte | IdNivel=1294 | Nuevo | 
+Victors fila 178 | cxve + Explosion | IdNivel=1350 | Nuevo | 
+Victors fila 179 | SVib21 + doradura | IdNivel=1301 | Nuevo | 
+Victors fila 180 | Redelekys + Deception Dive | IdNivel=1305 | Nuevo | 
+Victors fila 180 | LunatikSick + Deception Dive | IdNivel=1305 | Nuevo | 
+Victors fila 180 | Skyllz + Deception Dive | IdNivel=1305 | Nuevo | 
+Victors fila 180 | TropixVG + Deception Dive | IdNivel=1305 | Nuevo | 
+Victors fila 180 | Santiricca + Deception Dive | IdNivel=1305 | Nuevo | 
+Victors fila 180 | Fif + Deception Dive | IdNivel=1305 | Nuevo | 
+Victors fila 180 | Brusdxll + Deception Dive | IdNivel=1305 | Nuevo | 
+Victors fila 180 | Inc0gnit + Deception Dive | IdNivel=1305 | Nuevo | 
+Victors fila 180 | cxve + Deception Dive | IdNivel=1305 | Nuevo | 
+Victors fila 181 | MecaSony + Reanimate | IdNivel=1306 | Nuevo | 
+Victors fila 181 | Chimpi + Reanimate | IdNivel=1306 | Nuevo | 
+Victors fila 182 | Runnie_M + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | Redelekys + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | Pissa + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | LunatikSick + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | DoYouself + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | Overm0n + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | Santiricca + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | Wesok + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | Creiz + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | Neuronfish + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 182 | cxve + Crowd Control | IdNivel=1308 | Nuevo | 
+Victors fila 183 | cxve + Elite Z Rebirth | IdNivel=1315 | Nuevo | 
+Victors fila 183 | Neuronfish + Elite Z Rebirth | IdNivel=1315 | Nuevo | 
+Victors fila 184 | cxve + CYCLONE | IdNivel=1316 | Nuevo | 
+Victors fila 185 | Creiz + Polish Alphabet | IdNivel=1325 | Nuevo | 
+Victors fila 186 | Geroventi31 + TROLLMACHINE | IdNivel=1326 | Nuevo | 
+Victors fila 187 | Chimpi + STRATUS | IdNivel=1330 | Nuevo | 
+Victors fila 188 | sunnyagus + Voided | IdNivel=1335 | Nuevo | 
+Victors fila 189 | Geroventi31 + SHINE | IdNivel=1343 | Nuevo | 
+Victors fila 190 | DoYouself + CICADA3302 | IdNivel=1345 | Nuevo | 
+Victors fila 191 | Geroventi31 + Maths | IdNivel=1346 | Nuevo | 
+Victors fila 192 | Andres Beltran + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | LunatikSick + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | Pissa + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | Redelekys + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | DoYouself + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | WinRAR + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | federicotl + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | Skyllz + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | Santiricca + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | Gekura + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | KadriaN + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | Chimpi + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | FranPes + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | Sunnyagus + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | Fif + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | Geroventi31 + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | SVib21 + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | cxve + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 192 | peque + Allegiance | IdNivel=1351 | Nuevo | 
+Victors fila 193 | MaTeO_BeLu + IDOL19 | IdNivel=1359 | Nuevo | 
+Victors fila 194 | Joaquemix + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | Skyllz + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | Pissa + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | Redelekys + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | Runnie_M + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | Donato + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | TropixVG + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | Santiricca + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | Fif + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | DoYouself + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | MaTeO_BeLu + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 194 | Inc0gnit + HyperSonic | IdNivel=1364 | Nuevo | 
+Victors fila 195 | Joaquemix + Just DANCE | IdNivel=1367 | Nuevo | 
+Victors fila 196 | Santiricca + Incipient | IdNivel=1368 | Nuevo | 
+Victors fila 197 | Creiz + Bruno Mars | IdNivel=1371 | Nuevo | 
+Victors fila 198 | Redelekys + FISH FISH GODMODE | IdNivel=1422 | Nuevo | 
+Victors fila 198 | Thiago + FISH FISH GODMODE | IdNivel=1422 | Nuevo | 
+Victors fila 199 | DoYouself + Twilight Spire | IdNivel=1383 | Nuevo | 
+Victors fila 200 | Joaquemix + Virtual Collapse | IdNivel=1394 | Nuevo | 
+Victors fila 201 | Joaquemix + Redemption | IdNivel=1396 | Nuevo | 
+Victors fila 201 | Chimpi + Redemption | IdNivel=1396 | Nuevo | 
+Victors fila 202 | DoYouself + The Flawless | IdNivel=1398 | Nuevo | 
+Victors fila 202 | Salva + The Flawless | IdNivel=1398 | Nuevo | 
+Victors fila 202 | Chimpi + The Flawless | IdNivel=1398 | Nuevo | 
+Victors fila 202 | WinRAR + The Flawless | IdNivel=1398 | Nuevo | 
+Victors fila 202 | Santiricca + The Flawless | IdNivel=1398 | Nuevo | 
+Victors fila 202 | cxve + The Flawless | IdNivel=1398 | Nuevo | 
+Victors fila 202 | Rals + The Flawless | IdNivel=1398 | Nuevo | 
+Victors fila 202 | Redelekys + The Flawless | IdNivel=1398 | Nuevo | 
+Victors fila 203 | Redelekys + Robi | IdNivel=1399 | Nuevo | 
+Victors fila 204 | SVib21 + BROOKLYNBLOODPOP | IdNivel=1403 | Nuevo | 
+Victors fila 205 | LunatikSick + AcropoliX | IdNivel=1404 | Nuevo | 
+Victors fila 205 | Skyllz + AcropoliX | IdNivel=1404 | Nuevo | 
+Victors fila 205 | Santiricca + AcropoliX | IdNivel=1404 | Nuevo | 
+Victors fila 205 | Fif + AcropoliX | IdNivel=1404 | Nuevo | 
+Victors fila 205 | Redelekys + AcropoliX | IdNivel=1404 | Nuevo | 
+Victors fila 205 | cxve + AcropoliX | IdNivel=1404 | Nuevo | 
+Victors fila 206 | Brusdxll + The Ultimate Demon | IdNivel=1406 | Nuevo | 
+Victors fila 207 | Redelekys + Hidden in the Sand | IdNivel=1411 | Nuevo | 
+Victors fila 207 | LunatikSick + Hidden in the Sand | IdNivel=1411 | Nuevo | 
+Victors fila 207 | Pissa + Hidden in the Sand | IdNivel=1411 | Nuevo | 
+Victors fila 207 | Geroventi31 + Hidden in the Sand | IdNivel=1411 | Nuevo | 
+Victors fila 208 | Santiricca + Uprise | IdNivel=1419 | Nuevo | 
+Victors fila 208 | cxve + Uprise | IdNivel=1419 | Nuevo | 
+Victors fila 209 | Runnie_M + Clarity | IdNivel=1424 | Nuevo | 
+Victors fila 210 | Geroventi31 + Make it Drop | IdNivel=1430 | Nuevo | 
+Victors fila 210 | Santiricca + Make it Drop | IdNivel=1430 | Nuevo | 
+Victors fila 211 | Pissa + Tung Tung Sahurcles | IdNivel=1433 | Nuevo | 
+Victors fila 211 | sunnyagus + Tung Tung Sahurcles | IdNivel=1433 | Nuevo | 
+Victors fila 212 | Santiricca + Plasmatic | IdNivel=1434 | Nuevo | 
+Victors fila 213 | Geroventi31 + Bangarang | IdNivel=1436 | Nuevo | 
+Victors fila 213 | cxve + Bangarang | IdNivel=1436 | Nuevo | 
+Victors fila 214 | Santiricca + Dark Odyssey | IdNivel=1438 | Nuevo | 
+Victors fila 215 | Santiricca + reverie | IdNivel=1445 | Nuevo | 
+Victors fila 216 | Tryken + 8o X | IdNivel=1447 | Nuevo | 
+Victors fila 216 | WinRAR + 8o X | IdNivel=1447 | Nuevo | 
+Victors fila 216 | Santiricca + 8o X | IdNivel=1447 | Nuevo | 
+Victors fila 216 | cxve + 8o X | IdNivel=1447 | Nuevo | 
+Victors fila 217 | LunatikSick + Penombre | IdNivel=1454 | Nuevo | 
+Victors fila 218 | WinRAR + Anya III | IdNivel=1456 | Nuevo | 
+Victors fila 218 | Carnanoc + Anya III | IdNivel=1456 | Nuevo | 
+Victors fila 218 | Santiricca + Anya III | IdNivel=1456 | Nuevo | 
+Victors fila 219 | LunatikSick + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 219 | Redelekys + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 219 | WinRAR + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 219 | Garo204 + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 219 | Thiago + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 219 | Santiricca + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 219 | Gekura + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 219 | Pissa + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 219 | sunnyagus + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 219 | cxve + Forbidden Isle | IdNivel=1457 | Nuevo | 
+Victors fila 220 | Santiricca + The Lost Existence | IdNivel=1459 | Nuevo | 
+Victors fila 220 | Fif + The Lost Existence | IdNivel=1459 | Nuevo | 
+Victors fila 221 | Firestorm. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | NotDone. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Joaquemix. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Andres Beltran. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Runnie_M. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | LunatikSick. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | DoYouself. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Salva. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Redelekys. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Kuo. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Pissa. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Donato. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Garo204. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | WinRAR. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Kingus. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Overm0n. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Chimpi. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | federicotl. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Neuronfish. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | TropixVG. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Skyllz. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Santiricca. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Gekura. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Wesok. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Rodro. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Digit. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | KadriaN. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | sen. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | MrAlx. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Creiz. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | MaTeO_BeLu. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | EmilioRory. + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | Belux + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 221 | zDarki + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 221 | EmilioRory + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 221 | SVib21 + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 221 | FUZKITA + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 221 | Geroventi31 + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 221 | Fif + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 221 | Brusdxll + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 221 | Bruno + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 221 | sunnyagus + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 221 | cxve + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 222 | DoYouself + Lost Love | IdNivel=1482 | Nuevo | 
+Victors fila 222 | Neuronfish + Lost Love | IdNivel=1482 | Nuevo | 
+Victors fila 223 | Firestorm + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | NotDone + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Joaquemix + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Andres Beltran + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Runnie_M + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | LunatikSick + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | DoYouself + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Salva + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Redelekys + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Kuo + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Pissa + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Donato + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Garo204 + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | WinRAR + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | WinRAR + Cataclysm | IdNivel=1479 | Omitido | Combinación Jugador + Nivel repetida en la planilla
+Victors fila 223 | Kingus + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Overm0n + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Chimpi + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | federicotl + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Neuronfish + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | TropixVG + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Skyllz + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Santiricca + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Gekura + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Wesok + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Rodro + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Digit + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | KadriaN + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | sen + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | MrAlx + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Creiz + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | Neuronfish + Cataclysm | IdNivel=1479 | Omitido | Combinación Jugador + Nivel repetida en la planilla
+Victors fila 223 | MaTeO_BeLu + Cataclysm | IdNivel=1479 | Nuevo | 
+Victors fila 223 | EmilioRory + Cataclysm | IdNivel=1479 | Omitido | Combinación Jugador + Nivel repetida en la planilla
+Victors fila 223 | Okrun + Cataclysm | IdNivel=1479 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 224 | Ferrotheiz + encroaching dark | IdNivel=1486 | Nuevo | 
+Victors fila 225 | Santiricca + Komodo | IdNivel=1490 | Nuevo | 
+Victors fila 226 | Geroventi31 + Glisten | IdNivel=1494 | Nuevo | 
+Victors fila 226 | Redelekys + Glisten | IdNivel=1494 | Nuevo | 
+Victors fila 226 | Kikololcito + Glisten | IdNivel=1494 | Nuevo | 
+Victors fila 226 | JoacoGD14 + Glisten | IdNivel=1494 | Nuevo | 
+Victors fila 227 | Redelekys + Kanpai | IdNivel=1496 | Nuevo | 
+Victors fila 227 | Ferrotheiz + Kanpai | IdNivel=1496 | Nuevo | 
+Victors fila 227 | Creiz + Kanpai | IdNivel=1496 | Nuevo | 
+Victors fila 227 | DoYouself + Kanpai | IdNivel=1496 | Nuevo | 
+Victors fila 228 | Andres Beltran + Proteus | IdNivel=1503 | Nuevo | 
+Victors fila 228 | LunatikSick + Proteus | IdNivel=1503 | Nuevo | 
+Victors fila 228 | Santiricca + Proteus | IdNivel=1503 | Nuevo | 
+Victors fila 229 | Geroventi31 + 9Blue | IdNivel=1505 | Nuevo | 
+Victors fila 230 | cxve + Cognitive Capacity | IdNivel=1506 | Nuevo | 
+Victors fila 231 | LunatikSick + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 231 | Pissa + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 231 | DoYouself + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 231 | Thiago + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 231 | Santiricca + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 231 | Rev121 + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 231 | sunnyagus + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 231 | Okarun + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 231 | Fif + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 231 | cxve + Azurite (Sillow) | IdNivel=1510 | Nuevo | 
+Victors fila 232 | Neuronfish + Flappy Dynamix II | IdNivel=1512 | Nuevo | 
+Victors fila 233 | Neuronfish + The Depths Above | IdNivel=1515 | Nuevo | 
+Victors fila 234 | cxve + No Survivors | IdNivel=1521 | Nuevo | 
+Victors fila 235 | Gekura + Artificial Climb | IdNivel=1522 | Nuevo | 
+Victors fila 236 | Redelekys + Fun Friday | IdNivel=1526 | Nuevo | 
+Victors fila 237 | Geroventi31 + Wavetrip | IdNivel=1527 | Nuevo | 
+Victors fila 237 | cxve + Wavetrip | IdNivel=1527 | Nuevo | 
+Victors fila 238 | Geroventi31 + Mystic Bounds | IdNivel=1529 | Nuevo | 
+Victors fila 238 | Santiricca + Mystic Bounds | IdNivel=1529 | Nuevo | 
+Victors fila 239 | Redelekys + Mizureta | IdNivel=1531 | Nuevo | 
+Victors fila 239 | FranPes + Mizureta | IdNivel=1531 | Nuevo | 
+Victors fila 240 | DoYouself + Misty Mountains | IdNivel=1532 | Nuevo | 
+Victors fila 240 | Santiricca + Misty Mountains | IdNivel=1532 | Nuevo | 
+Victors fila 241 | LunatikSick + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | Redelekys + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | Wesok + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | DoYouself + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | ThaLion087 + Niwa | IdNivel=1535 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 241 | Thiago + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | Chimpi + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | FranPes + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | Rodro + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | EmilioRory + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | Santiricca + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 241 | Pissa + Niwa | IdNivel=1535 | Nuevo | 
+Victors fila 242 | Runnie_M + Without U | IdNivel=1536 | Nuevo | 
+Victors fila 243 | Thiago + Prismatic | IdNivel=1541 | Nuevo | 
+Victors fila 243 | Santiricca + Prismatic | IdNivel=1541 | Nuevo | 
+Victors fila 243 | Fif + Prismatic | IdNivel=1541 | Nuevo | 
+Victors fila 243 | Inc0gnit + Prismatic | IdNivel=1541 | Nuevo | 
+Victors fila 244 | MaTeO_BeLu + Bang Gang (2P) | IdNivel=1551 | Nuevo | 
+Victors fila 245 | Pissa + BRUTAL | IdNivel=1555 | Nuevo | 
+Victors fila 245 | Redelekys + BRUTAL | IdNivel=1555 | Nuevo | 
+Victors fila 245 | Skyllz + BRUTAL | IdNivel=1555 | Nuevo | 
+Victors fila 245 | Gekura + BRUTAL | IdNivel=1555 | Nuevo | 
+Victors fila 246 | Creiz + Troll Level | IdNivel=1557 | Nuevo | 
+Victors fila 246 | Ramii + Troll Level | IdNivel=1557 | Nuevo | 
+Victors fila 246 | DoYouself + Troll Level | IdNivel=1557 | Nuevo | 
+Victors fila 246 | EmilioRory + Troll Level | IdNivel=1557 | Nuevo | 
+Victors fila 246 | Redelekys + Troll Level | IdNivel=1557 | Nuevo | 
+Victors fila 247 | Santiricca + Lone | IdNivel=1559 | Nuevo | 
+Victors fila 248 | LunatikSick + ANNIHILATED | IdNivel=1566 | Nuevo | 
+Victors fila 249 | LunatikSick + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 249 | Pissa + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 249 | Skyllz + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 249 | Thiago + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 249 | Sunnyagus + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 249 | Santiricca + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 249 | Geroventi31 + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 249 | KadriaN + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 249 | cxve + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 249 | SVib21 + Sweater Weather | IdNivel=1568 | Nuevo | 
+Victors fila 250 | Joaquemix + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Corews + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Runnie_M + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | DoYouself + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | LunatikSick + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Tryken + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Pissa + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Ruitsu + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Creiz + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Sunnyagus + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | EmilioRory + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Redelekys + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | WinRAR + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Neuronfish + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Geroventi31 + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Thiago + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Skyllz + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Overm0n + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | TropixVG + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Santiricca + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | FranPes + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Chimpi + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | MaTeO_BeLu + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Ferrotheiz + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Fif + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | SVib21 + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | ThaLion087 + Acu | IdNivel=1570 | Omitido | Victor no presente en Players ni resuelto de forma única en SQL
+Victors fila 250 | Brusdxll + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | cxve + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 250 | Okarun + Acu | IdNivel=1570 | Nuevo | 
+Victors fila 251 | KadriaN + Through The Decay | IdNivel=1572 | Nuevo | 
+Victors fila 251 | FranPes + Through The Decay | IdNivel=1572 | Nuevo | 
+Victors fila 251 | Santiricca + Through The Decay | IdNivel=1572 | Nuevo | 
+Victors fila 251 | Gekura + Through The Decay | IdNivel=1572 | Nuevo | 
+Victors fila 251 | Pissa + Through The Decay | IdNivel=1572 | Nuevo | 
+Victors fila 252 | LunatikSick + Precipitance | IdNivel=1573 | Nuevo | 
+Victors fila 252 | Redelekys + Precipitance | IdNivel=1573 | Nuevo | 
+Victors fila 253 | Andres Beltran + Red World | IdNivel=1574 | Nuevo | 
+Victors fila 253 | LunatikSick + Red World | IdNivel=1574 | Nuevo | 
+Victors fila 253 | WinRAR + Red World | IdNivel=1574 | Nuevo | 
+Victors fila 253 | Santiricca + Red World | IdNivel=1574 | Nuevo | 
+Victors fila 253 | FranPes + Red World | IdNivel=1574 | Nuevo | 
+Victors fila 253 | Fif + Red World | IdNivel=1574 | Nuevo | 
+Victors fila 253 | Inc0gnit + Red World | IdNivel=1574 | Nuevo | 
+Victors fila 253 | cxve + Red World | IdNivel=1574 | Nuevo | 
+Victors fila 254 | Santiricca + Rauchkammer | IdNivel=1575 | Nuevo | 
+Victors fila 254 | Santiricca + Rauchkammer | IdNivel=1575 | Omitido | Combinación Jugador + Nivel repetida en la planilla
+Victors fila 254 | Fif + Rauchkammer | IdNivel=1575 | Nuevo | 
+Victors fila 254 | Belux + Rauchkammer | IdNivel=1575 | Nuevo | 
+Victors fila 254 | Garo204 + Rauchkammer | IdNivel=1575 | Nuevo | 
+Victors fila 254 | peque + Rauchkammer | IdNivel=1575 | Nuevo | 
+Victors fila 254 | cxve + Rauchkammer | IdNivel=1575 | Nuevo | 
+
+Informes: C:\Users\andre\OneDrive\Escritorio\UDL\import-data\reports\udl-dry-run.txt / .json

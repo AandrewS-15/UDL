@@ -9,6 +9,8 @@ public partial class Jugador
 
     public string NombreGd { get; set; } = null!;
 
+    public string? AvatarUrl { get; set; }
+
     public bool EsUruguayo { get; set; }
 
     public bool Activo { get; set; }
