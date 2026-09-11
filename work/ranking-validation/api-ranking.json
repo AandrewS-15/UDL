@@ -1,0 +1,530 @@
+[
+  {
+    "posicion": 1,
+    "idJugador": 51,
+    "nombreGD": "Santiricca",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/376892077385973760/d0ec53a15314db02c5e9efc6d62e9c02.png?size=512",
+    "totalPuntos": 7918.8,
+    "cantidadCompletions": 66
+  },
+  {
+    "posicion": 2,
+    "idJugador": 12,
+    "nombreGD": "cxve",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/998742022078873681/12761928413b7a633e077fa0f80d219a.png?size=512",
+    "totalPuntos": 5483.0,
+    "cantidadCompletions": 65
+  },
+  {
+    "posicion": 3,
+    "idJugador": 20,
+    "nombreGD": "Fif",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/837900433812094987/f46b461c24bf5a147b63fcbf73527c0f.png?size=512",
+    "totalPuntos": 4820.0,
+    "cantidadCompletions": 44
+  },
+  {
+    "posicion": 4,
+    "idJugador": 5,
+    "nombreGD": "Ardizz",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1261778289895149619/1bc70e961592b0aa57f28f8eafd2d251.png?size=512",
+    "totalPuntos": 4519.3,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 5,
+    "idJugador": 26,
+    "nombreGD": "Gekura",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/888947119606595614/c65f49c298591191b27fbfff81dff5ec.png?size=512",
+    "totalPuntos": 4300.7,
+    "cantidadCompletions": 26
+  },
+  {
+    "posicion": 6,
+    "idJugador": 39,
+    "nombreGD": "Neuronfish",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/999113061380145212/4c6b5147599331d5c64ebae1e2adced7.png?size=512",
+    "totalPuntos": 3428.4,
+    "cantidadCompletions": 30
+  },
+  {
+    "posicion": 7,
+    "idJugador": 34,
+    "nombreGD": "LunatikSick",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1224340888096866387/79762ecd727d0e0295c5287717d3e8d2.png?size=512",
+    "totalPuntos": 3333.9,
+    "cantidadCompletions": 40
+  },
+  {
+    "posicion": 8,
+    "idJugador": 50,
+    "nombreGD": "Salva",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/931604964294402068/349914c6a875db50d9841fd9480c3f6f.png?size=512",
+    "totalPuntos": 2974.1,
+    "cantidadCompletions": 8
+  },
+  {
+    "posicion": 9,
+    "idJugador": 42,
+    "nombreGD": "Pissa",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/635930792349925387/c2059f734610cf5e126c276b6cfda26d.png?size=512",
+    "totalPuntos": 2900.8,
+    "cantidadCompletions": 27
+  },
+  {
+    "posicion": 10,
+    "idJugador": 4,
+    "nombreGD": "Andres Beltran",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png?size=4096",
+    "totalPuntos": 2525.9,
+    "cantidadCompletions": 17
+  },
+  {
+    "posicion": 11,
+    "idJugador": 45,
+    "nombreGD": "Redelekys",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/297748459719622656/521a739cd3fe2b0eaec16273025a90bb.png?size=512",
+    "totalPuntos": 2335.1,
+    "cantidadCompletions": 49
+  },
+  {
+    "posicion": 12,
+    "idJugador": 55,
+    "nombreGD": "sunnyagus",
+    "avatarUrl": "https://cdn.discordapp.com/guilds/1211401917666951168/users/802013355345707019/avatars/2063510806633123bb09f8c62ff47f07.png?size=512",
+    "totalPuntos": 2280.2,
+    "cantidadCompletions": 22
+  },
+  {
+    "posicion": 13,
+    "idJugador": 27,
+    "nombreGD": "Geroventi31",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/828635706434781265/9dcb5bc8f0b0f9d9fa80d60edfe02a57.png?size=512",
+    "totalPuntos": 2139.7,
+    "cantidadCompletions": 35
+  },
+  {
+    "posicion": 14,
+    "idJugador": 29,
+    "nombreGD": "Joaquemix",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/321068891457716226/61e8958fb09e345392b5b3905a1a879a.png?size=512",
+    "totalPuntos": 2125.6,
+    "cantidadCompletions": 21
+  },
+  {
+    "posicion": 15,
+    "idJugador": 15,
+    "nombreGD": "DoYouself",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/582965755570814996/77910d492c987ec1bbca4c31f0f5e296.png?size=512",
+    "totalPuntos": 2071.6,
+    "cantidadCompletions": 36
+  },
+  {
+    "posicion": 16,
+    "idJugador": 65,
+    "nombreGD": "peque",
+    "avatarUrl": "https://yt3.googleusercontent.com/zvWXEgdRzMEyWLlgc1oAbKXMccPpF2cwiJ7dz3sOO9gbovwW1LE6EprxzGULUTkgxU6aVTQbTw=s160-c-k-c0x00ffffff-no-rj",
+    "totalPuntos": 1671.7,
+    "cantidadCompletions": 5
+  },
+  {
+    "posicion": 17,
+    "idJugador": 9,
+    "nombreGD": "Chimpi",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/443536912485974029/4b7becb2e5d760ae922eebe6e0c35cda.png?size=512",
+    "totalPuntos": 1285.8,
+    "cantidadCompletions": 21
+  },
+  {
+    "posicion": 18,
+    "idJugador": 53,
+    "nombreGD": "Skyllz",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/584398091906580493/bd55ea25b2ed82894c119a17719bcae3.png?size=512",
+    "totalPuntos": 1244.3,
+    "cantidadCompletions": 22
+  },
+  {
+    "posicion": 19,
+    "idJugador": 7,
+    "nombreGD": "Brusdxll",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 1019.7,
+    "cantidadCompletions": 19
+  },
+  {
+    "posicion": 20,
+    "idJugador": 54,
+    "nombreGD": "SVib21",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/778044188843180063/249e3ed9446892acc6812035060d28d5.png?size=512",
+    "totalPuntos": 978.9,
+    "cantidadCompletions": 13
+  },
+  {
+    "posicion": 21,
+    "idJugador": 52,
+    "nombreGD": "Sen",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 851.0,
+    "cantidadCompletions": 5
+  },
+  {
+    "posicion": 22,
+    "idJugador": 31,
+    "nombreGD": "KadriaN",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/305159280061972481/153d809878d530900b34413cf8592322.png?size=512",
+    "totalPuntos": 791.7,
+    "cantidadCompletions": 16
+  },
+  {
+    "posicion": 23,
+    "idJugador": 22,
+    "nombreGD": "FranPes",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/893628558537265222/bd8e51bee9132df08d6623b30caa5bb8.png?size=512",
+    "totalPuntos": 634.5,
+    "cantidadCompletions": 12
+  },
+  {
+    "posicion": 24,
+    "idJugador": 47,
+    "nombreGD": "Rodro",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png?size=4096",
+    "totalPuntos": 633.2,
+    "cantidadCompletions": 4
+  },
+  {
+    "posicion": 25,
+    "idJugador": 11,
+    "nombreGD": "Creiz",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/813516850306351144/425ffa736079535d2a8164d07d6ca9fd.png?size=512",
+    "totalPuntos": 590.0,
+    "cantidadCompletions": 15
+  },
+  {
+    "posicion": 26,
+    "idJugador": 41,
+    "nombreGD": "Overm0n",
+    "avatarUrl": "https://i.pinimg.com/564x/31/c4/db/31c4db629f50a30956e970efcf9aa6dc.jpg",
+    "totalPuntos": 545.2,
+    "cantidadCompletions": 9
+  },
+  {
+    "posicion": 27,
+    "idJugador": 56,
+    "nombreGD": "Thiago",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1213571201331626005/30e735e6e7efb41f3de905aaa65e914a.png?size=512",
+    "totalPuntos": 537.0,
+    "cantidadCompletions": 10
+  },
+  {
+    "posicion": 28,
+    "idJugador": 60,
+    "nombreGD": "WinRAR",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/755207478320562176/97d806db6f20db23906d4c143513994b.png?size=512",
+    "totalPuntos": 533.9,
+    "cantidadCompletions": 19
+  },
+  {
+    "posicion": 29,
+    "idJugador": 6,
+    "nombreGD": "Belux",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1253544474659782746/ed5df1cdf278fa46c3febbf50575d5ab.png?size=512",
+    "totalPuntos": 517.8,
+    "cantidadCompletions": 5
+  },
+  {
+    "posicion": 30,
+    "idJugador": 25,
+    "nombreGD": "GDNacho",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/341356030133010432/49fc5c4dcb5d3a6597650896c7cc98db.png?size=512",
+    "totalPuntos": 485.6,
+    "cantidadCompletions": 5
+  },
+  {
+    "posicion": 31,
+    "idJugador": 16,
+    "nombreGD": "EmilioRory",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/715735432536653954/f587e0e22ccb17d5199770d9130ee694.png?size=512",
+    "totalPuntos": 462.0,
+    "cantidadCompletions": 12
+  },
+  {
+    "posicion": 32,
+    "idJugador": 28,
+    "nombreGD": "Inc0gnit",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1314416864524369923/1cb39908c75ac0418fe14396b49ffb0f.png?size=512",
+    "totalPuntos": 454.4,
+    "cantidadCompletions": 12
+  },
+  {
+    "posicion": 33,
+    "idJugador": 35,
+    "nombreGD": "MaTeO_BeLu",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/896518484995997706/8e4bb5553b0ad814af780e1b05b86e5d.png?size=512",
+    "totalPuntos": 330.7,
+    "cantidadCompletions": 11
+  },
+  {
+    "posicion": 34,
+    "idJugador": 24,
+    "nombreGD": "Garo204",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1467576992529514589/ec99afff7bcfb6879839758c54a00a9a.png?size=512",
+    "totalPuntos": 255.6,
+    "cantidadCompletions": 5
+  },
+  {
+    "posicion": 35,
+    "idJugador": 57,
+    "nombreGD": "TropixVG",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 227.7,
+    "cantidadCompletions": 7
+  },
+  {
+    "posicion": 36,
+    "idJugador": 58,
+    "nombreGD": "Tryken",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 207.7,
+    "cantidadCompletions": 4
+  },
+  {
+    "posicion": 37,
+    "idJugador": 19,
+    "nombreGD": "Ferrotheiz",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/934054187451449364/16a651a423a1fa9db44f4a9b714ca594.png?size=512",
+    "totalPuntos": 187.8,
+    "cantidadCompletions": 9
+  },
+  {
+    "posicion": 38,
+    "idJugador": 49,
+    "nombreGD": "Runnie_M",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/418074740914257942/ee0fd3c3fb90d8931c4a5004980cfa9c.png?size=512",
+    "totalPuntos": 183.5,
+    "cantidadCompletions": 9
+  },
+  {
+    "posicion": 39,
+    "idJugador": 18,
+    "nombreGD": "federicotl",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 155.9,
+    "cantidadCompletions": 5
+  },
+  {
+    "posicion": 40,
+    "idJugador": 38,
+    "nombreGD": "Nahuel2998",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/174275981278838785/2ad320b192132be4ebd319b3a2623329.png?size=512",
+    "totalPuntos": 106.3,
+    "cantidadCompletions": 2
+  },
+  {
+    "posicion": 41,
+    "idJugador": 67,
+    "nombreGD": "z",
+    "avatarUrl": null,
+    "totalPuntos": 97.4,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 42,
+    "idJugador": 59,
+    "nombreGD": "Wesok",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1086693938586460160/bfe98e9a3ece02665aa5a21a0ee5d23d.png?size=512",
+    "totalPuntos": 82.2,
+    "cantidadCompletions": 4
+  },
+  {
+    "posicion": 43,
+    "idJugador": 63,
+    "nombreGD": "Okarun",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1195501690493866057/2630988eba6f0ff9387ac3318d81d6ec.png?size=512",
+    "totalPuntos": 78.1,
+    "cantidadCompletions": 4
+  },
+  {
+    "posicion": 44,
+    "idJugador": 44,
+    "nombreGD": "Rals",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1469505000005959803/6484a17ddfff129e24959d861b71b50c.png?size=512",
+    "totalPuntos": 58.0,
+    "cantidadCompletions": 2
+  },
+  {
+    "posicion": 45,
+    "idJugador": 23,
+    "nombreGD": "FUZKITA",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/483083444654571521/555843c840b99cd35105cd53a02301a0.png?size=512",
+    "totalPuntos": 57.2,
+    "cantidadCompletions": 2
+  },
+  {
+    "posicion": 46,
+    "idJugador": 33,
+    "nombreGD": "Kuo",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/410501068871696385/4c7f19e6c09be6aeeda0b40f0681bbe4.png?size=512",
+    "totalPuntos": 57.2,
+    "cantidadCompletions": 2
+  },
+  {
+    "posicion": 47,
+    "idJugador": 61,
+    "nombreGD": "zDarki",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/278365068876447775/0d9d25f4cbf5d77cec6bcda87063555c.png?size=512",
+    "totalPuntos": 57.2,
+    "cantidadCompletions": 2
+  },
+  {
+    "posicion": 48,
+    "idJugador": 48,
+    "nombreGD": "Ruitsu",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/309863471111995392/177b2b2ae1aaaaea2ffaaef4758a8d20.png?size=512",
+    "totalPuntos": 24.4,
+    "cantidadCompletions": 2
+  },
+  {
+    "posicion": 49,
+    "idJugador": 14,
+    "nombreGD": "Donato",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 22.8,
+    "cantidadCompletions": 2
+  },
+  {
+    "posicion": 50,
+    "idJugador": 17,
+    "nombreGD": "Facu28",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 21.4,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 51,
+    "idJugador": 69,
+    "nombreGD": "ThaLion087",
+    "avatarUrl": null,
+    "totalPuntos": 20.6,
+    "cantidadCompletions": 2
+  },
+  {
+    "posicion": 52,
+    "idJugador": 66,
+    "nombreGD": "lo4ma",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 14.0,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 53,
+    "idJugador": 36,
+    "nombreGD": "MecaSony",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/660294368674054184/9645f2566bf98e405e37a4258216a3d4.png?size=512",
+    "totalPuntos": 13.0,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 54,
+    "idJugador": 8,
+    "nombreGD": "Carnanoc",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1210711803936374868/de3ffd6bec51d7c2ef1b049d509ec4e5.png?size=512",
+    "totalPuntos": 11.0,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 55,
+    "idJugador": 68,
+    "nombreGD": "Bruno",
+    "avatarUrl": null,
+    "totalPuntos": 10.8,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 56,
+    "idJugador": 13,
+    "nombreGD": "Digit",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/171067578662256640/296b0759a8fce8417563292312701cf9.png?size=512",
+    "totalPuntos": 10.8,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 57,
+    "idJugador": 21,
+    "nombreGD": "Firestorm",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 10.8,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 58,
+    "idJugador": 32,
+    "nombreGD": "Kingus",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/969810148107358239/13baf9767f00e094b846e09bb5bcfbce.png?size=512",
+    "totalPuntos": 10.8,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 59,
+    "idJugador": 37,
+    "nombreGD": "MrAlx",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/957458893880033410/0fad4cb56f7dc3d352c8993868e2fda8.png?size=512",
+    "totalPuntos": 10.8,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 60,
+    "idJugador": 40,
+    "nombreGD": "NotDone",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 10.8,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 61,
+    "idJugador": 64,
+    "nombreGD": "JoacoGD14",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1481809721701830688/d165321893dc1d62df5637308cd6e682.png?size=512",
+    "totalPuntos": 10.7,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 62,
+    "idJugador": 62,
+    "nombreGD": "Kikololcito",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/1324273024949817374/0da0d232e5e78fdfbe768099f20cdf52.png?size=512",
+    "totalPuntos": 10.7,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 63,
+    "idJugador": 46,
+    "nombreGD": "Rev121",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/797223382785196062/d9efbffd6708b76520ab6511c57eff80.png?size=512",
+    "totalPuntos": 10.5,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 64,
+    "idJugador": 43,
+    "nombreGD": "Ramii",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 10.3,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 65,
+    "idJugador": 10,
+    "nombreGD": "Corews",
+    "avatarUrl": "https://cdn.discordapp.com/avatars/631646853661982740/c90a573259c7ef663b7d48303006a7eb.png?size=512",
+    "totalPuntos": 10.2,
+    "cantidadCompletions": 1
+  },
+  {
+    "posicion": 66,
+    "idJugador": 30,
+    "nombreGD": "Joako",
+    "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png?size=4096",
+    "totalPuntos": 0.0,
+    "cantidadCompletions": 0
+  }
+]

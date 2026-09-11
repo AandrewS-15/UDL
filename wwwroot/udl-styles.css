@@ -178,3 +178,7 @@ footer{position:relative;z-index:1;background:#0b111a;border-top:1px solid #3549
 footer .foot strong{color:var(--white)}
 /* Preserve the softer mobile watermark without the added text frames. */
 @media(max-width:760px){body::before{opacity:.16}body:has(.hero-intro)::before{opacity:.22}}
+
+/* Avatares del ranking real: se conserva la tabla y el diseño existente. */
+.player-identity{display:flex;align-items:center;gap:12px}.ranking-avatar{flex:0 0 34px;position:relative;overflow:hidden;border-radius:50%}.ranking-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.player-identity>span:last-child{min-width:0;overflow-wrap:anywhere}
+@media(max-width:760px){.player-identity{gap:7px}.ranking-avatar{width:26px;height:26px;flex-basis:26px;font-size:12px}}

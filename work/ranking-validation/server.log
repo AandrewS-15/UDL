@@ -1,0 +1,47 @@
+Usando la configuración de inicio de C:\Users\andre\OneDrive\Escritorio\UDL\Properties\launchSettings.json...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5083
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\andre\OneDrive\Escritorio\UDL
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (86ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]

@@ -6,6 +6,7 @@ using UDL.Services.Import;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<UDL.Services.Ranking.PlayerRankingQuery>();
 builder.Services.AddScoped<AredlSyncService>();
 builder.Services.AddOptions<AredlOptions>()
     .Bind(builder.Configuration.GetSection(AredlOptions.SectionName))

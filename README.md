@@ -1,5 +1,8 @@
 # UDL · Etapa 3: backend e integración de lectura AREDL
 
+El ranking de **Jugadores** (`/#players`) ya consulta SQL mediante EF y muestra
+puntos, completions y avatares reales. Ver [consulta y validaciones](docs/player-ranking.md).
+
 La importación histórica inicial ya se ejecutó: **66 jugadores y 781 records**,
 con segunda ejecución idempotente. Ver [cierre, comandos y validaciones](docs/udl-import-completed.md).
 Los dry runs y menciones de schema pendiente más abajo documentan etapas anteriores.
