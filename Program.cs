@@ -3,11 +3,22 @@ using UDL.Data;
 using Microsoft.Extensions.Options;
 using UDL.Services.Aredl;
 using UDL.Services.Import;
+using UDL.Services.Accounts;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<UDL.Services.Submissions.SubmissionService>();
+builder.Services.AddUdlIdentity(builder.Environment.IsDevelopment());
+builder.Services.AddScoped<UDL.Services.Home.HomeService>();
 builder.Services.AddScoped<UDL.Services.Ranking.PlayerRankingQuery>();
+builder.Services.AddScoped<UDL.Services.Levels.UruguayLevelListQuery>();
+builder.Services.AddScoped<UDL.Services.Ranking.PlayerProfileService>();
+builder.Services.AddScoped<UDL.Services.Levels.LevelDetailsService>();
 builder.Services.AddScoped<AredlSyncService>();
+builder.Services.AddScoped<IAredlSyncService>(sp => sp.GetRequiredService<AredlSyncService>());
+builder.Services.AddSingleton(TimeProvider.System);
+if (AredlSyncBackgroundService.ShouldRegister(args, builder.Environment.EnvironmentName))
+    builder.Services.AddHostedService<AredlSyncBackgroundService>();
 builder.Services.AddOptions<AredlOptions>()
     .Bind(builder.Configuration.GetSection(AredlOptions.SectionName))
     .Validate(options => Uri.TryCreate(options.BaseUrl, UriKind.Absolute, out var uri)
@@ -15,6 +26,10 @@ builder.Services.AddOptions<AredlOptions>()
         && string.IsNullOrEmpty(uri.Fragment), "Aredl:BaseUrl debe ser una URL HTTPS absoluta sin query ni fragmento.")
     .Validate(options => options.TimeoutSeconds is > 0 and <= 120,
         "Aredl:TimeoutSeconds debe estar entre 1 y 120.")
+    .Validate(options => options.SyncIntervalMinutes is > 0 and <= 10080,
+        "Aredl:SyncIntervalMinutes debe estar entre 1 y 10080.")
+    .Validate(options => options.SyncInitialDelaySeconds is >= 0 and <= 3600,
+        "Aredl:SyncInitialDelaySeconds debe estar entre 0 y 3600.")
     .ValidateOnStart();
 builder.Services.AddHttpClient<AredlService>((services, client) =>
 {
@@ -100,7 +115,31 @@ if (args.Contains("--verify-database"))
     Console.WriteLine("Conexión y consultas EF de las cinco tablas verificadas (solo lectura).");
     return;
 }
+if (args.Contains("--grant-role"))
+{
+    if (!app.Environment.IsDevelopment()) throw new InvalidOperationException("El comando de roles solo está disponible en Development.");
+    var role = builder.Configuration["role"];
+    var userId = builder.Configuration["user-id"];
+    if (!IdentitySetup.Roles.Contains(role) || string.IsNullOrWhiteSpace(userId))
+        throw new ArgumentException("Usar --grant-role --user-id <Id existente> --role <Usuario|Moderador|Administrador>.");
+    await IdentitySetup.SeedRolesAsync(app.Services);
+    using var scope = app.Services.CreateScope();
+    var manager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.UserManager<UDL.Models.ApplicationUser>>();
+    var user = await manager.FindByIdAsync(userId) ?? throw new ArgumentException("La cuenta indicada no existe.");
+    if (!await manager.IsInRoleAsync(user, role!))
+    {
+        var result = await manager.AddToRoleAsync(user, role!);
+        if (!result.Succeeded) throw new InvalidOperationException("No se pudo asignar el rol.");
+    }
+    Console.WriteLine($"Rol {role} asignado a la cuenta existente {user.UserName}.");
+    return;
+}
 app.UseStaticFiles();
+if (!app.Environment.IsDevelopment()) { app.UseHsts(); app.UseHttpsRedirection(); }
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
+await IdentitySetup.SeedRolesAsync(app.Services);
 app.MapGet("/index.html", () => Results.Redirect("/"));
 app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
 app.Run();

@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using UDL.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace UDL.Data;
 
-public partial class UdlDbContext : DbContext
+public partial class UdlDbContext : IdentityDbContext<ApplicationUser>
 {
     public UdlDbContext(DbContextOptions<UdlDbContext> options)
         : base(options)
@@ -24,6 +26,22 @@ public partial class UdlDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+        // IDs Identity generados como GUID; 128 caracteres evita claves compuestas SQL sobredimensionadas.
+        modelBuilder.Entity<IdentityRole>().Property(r => r.Id).HasMaxLength(128);
+        modelBuilder.Entity<IdentityUserLogin<string>>().Property(l => l.LoginProvider).HasMaxLength(128);
+        modelBuilder.Entity<IdentityUserLogin<string>>().Property(l => l.ProviderKey).HasMaxLength(128);
+        modelBuilder.Entity<IdentityUserToken<string>>().Property(t => t.LoginProvider).HasMaxLength(128);
+        modelBuilder.Entity<IdentityUserToken<string>>().Property(t => t.Name).HasMaxLength(128);
+        modelBuilder.Entity<ApplicationUser>(entity =>
+        {
+            entity.Property(u => u.Id).HasMaxLength(128);
+            entity.HasOne(u => u.Jugador).WithOne().HasForeignKey<ApplicationUser>(u => u.IdJugador)
+                .OnDelete(DeleteBehavior.NoAction);
+            entity.HasIndex(u => u.IdJugador).IsUnique().HasFilter("[IdJugador] IS NOT NULL");
+            entity.HasIndex(u => u.NormalizedEmail).HasDatabaseName("EmailIndex")
+                .IsUnique().HasFilter("[NormalizedEmail] IS NOT NULL");
+        });
         modelBuilder.Entity<HistorialNivel>(entity =>
         {
             entity.HasKey(e => e.IdHistorial).HasName("PK__Historia__9CC7DBB4DADFE71B");

@@ -1,0 +1,438 @@
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5083
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\andre\OneDrive\Escritorio\UDL
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 792.2483ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 800.437ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 2120 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 165.629ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 165.7836ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 731 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 474.144ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 474.2438ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 4263 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 194.8253ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 194.927ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 2915 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 107.9884ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 108.0988ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 375 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 58.1158ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 58.2372ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 207 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 508.5079ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 508.5882ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 1423 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 165.9339ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 166.0387ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 494 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 1512.9956ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 1513.1059ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 5827 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 552.2656ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 552.3501ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 5541 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 2506.3115ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 2506.4047ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 4210 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 167.171ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 167.2761ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 474 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 290.8709ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 290.9532ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 546 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 39.0648ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 39.1714ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 189 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 124.1334ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 124.2087ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 583 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 43.9572ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 44.0487ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 207 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 483.3529ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 483.5311ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 3082 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 160.9041ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 160.972ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 2799 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 684.2802ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 684.3566ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 6019 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 523.0936ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 523.1633ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 3909 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 522.147ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 522.2164ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 4909 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 545.4486ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 545.6107ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 4474 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 669.0038ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 669.0936ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 8656 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 609.5111ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 609.5805ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 6964 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 828.1841ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 828.2576ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 3277 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 1188.4918ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 1188.5571ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 3353 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 525.3937ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 525.4691ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 3666 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 493.1304ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 493.2348ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 2881 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 484.9581ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 485.0284ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 1949 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 317.7888ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 317.8592ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 1413 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 474.4473ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 474.5531ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 1359 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 159.2927ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 159.3489ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 422 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 138.2854ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 138.3304ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 402 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 44.4589ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 44.5006ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 182 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 803.9688ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 804.0135ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 3192 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 502.2778ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 502.3243ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 1799 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 106.8825ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 107.0131ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 400 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 38.4623ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 38.5035ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 218 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 141.3061ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 141.3445ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 436 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 35.4158ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 35.4579ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 226 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 592.1842ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 592.2444ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 168, Sin cambios 1447, Historiales 168, Errores 0. Duración 1875 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 160.9929ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 161.0368ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 488 ms.
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[100]
+      Start processing HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[100]
+      Sending HTTP request GET https://api.aredl.net/v2/api/aredl/levels
+info: System.Net.Http.HttpClient.AredlService.ClientHandler[101]
+      Received HTTP response headers after 144.7577ms - 200
+info: System.Net.Http.HttpClient.AredlService.LogicalHandler[101]
+      End processing HTTP request after 144.8169ms - 200
+info: UDL.Services.Aredl.AredlSyncBackgroundService[0]
+      AREDL automático: Nuevos 0, Actualizados 0, Sin cambios 1615, Historiales 0, Errores 0. Duración 404 ms.

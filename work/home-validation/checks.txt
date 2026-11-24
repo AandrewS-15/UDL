@@ -1,0 +1,9 @@
+OK: exclusión de importados y progresos, límite/orden de records, subida/bajada, puntos/estado, snapshot siguiente, neutral y vacío; traducción SQL.
+TOP 1: Santiricca 7918,8 /players/51
+TOP 2: cxve 5483,0 /players/12
+TOP 3: Fif 4820,0 /players/20
+Records recientes reales: 0
+HIST 1606: TAURINE | • Cambió puntuación | 0 → 10 pts | 2026-09-10T21:30:18.4819221 UTC | /levels/1609
+HIST 1605: Thanatophobia | • Cambió puntuación | 0 → 10 pts | 2026-09-10T21:30:18.4819221 UTC | /levels/1608
+HIST 1604: foggy morning | • Cambió puntuación | 0 → 10 pts | 2026-09-10T21:30:18.4819221 UTC | /levels/1607
+OK: Home contra SQL y ranking, solo lectura.

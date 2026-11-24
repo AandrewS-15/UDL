@@ -39,6 +39,13 @@ function playerRows() {
   for (const p of matches) {
     const row = document.createElement('tr');
     row.dataset.playerId = p.idJugador;
+    row.classList.add('clickable-player-row');
+    const profileUrl = new URL(`players/${p.idJugador}`, document.baseURI).href;
+    row.addEventListener('click', event => {
+      if (event.target.closest('a') || window.getSelection()?.toString()) return;
+      if (event.ctrlKey || event.metaKey) window.open(profileUrl, '_blank', 'noopener');
+      else window.location.assign(profileUrl);
+    });
     const cell = (className, value) => { const td = document.createElement('td'); td.className = className; td.textContent = value; row.append(td); return td; };
     cell(`player-rank ${rankClass(p.posicion)}`, `#${String(p.posicion).padStart(2, '0')}`);
     const identity = document.createElement('span');
@@ -61,7 +68,9 @@ function playerRows() {
         }
       } catch { /* URL inválida: conservar inicial. */ }
     }
-    const name = document.createElement('span');
+    const name = document.createElement('a');
+    name.href = profileUrl;
+    name.className = 'player-link';
     name.textContent = p.nombreGD;
     identity.append(avatar, name);
     cell('player-name', '').append(identity);

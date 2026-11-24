@@ -1,0 +1,4 @@
+@model string
+@{ Layout = "~/Views/Shared/_PublicLayout.cshtml"; ViewData["Title"] = Model; }
+<h1>@Model</h1><p class="muted">No existe un registro con este identificador.</p>
+<div class="actions"><a class="btn secondary" href="@Url.Content("~/#players")">Jugadores</a><a class="btn secondary" href="@Url.Content("~/#list")">Lista Uruguay</a></div>

@@ -1,0 +1,18 @@
+@inject Microsoft.AspNetCore.Identity.UserManager<UDL.Models.ApplicationUser> AccountUsers
+@if (User.Identity?.IsAuthenticated == true)
+{
+    var accountUser = await AccountUsers.GetUserAsync(User);
+    <details class="user-menu"><summary>@User.Identity.Name <span aria-hidden="true">⌄</span></summary><div class="user-dropdown">
+        <a href="@Url.Content("~/account")">Mi cuenta</a>
+        @if (accountUser?.IdJugador is not null)
+        {
+            <a href="@Url.Content("~/submissions/new")">Enviar record</a>
+            <a href="@Url.Content("~/submissions/mine")">Mis envíos</a>
+        }
+        <form method="post" action="@Url.Content("~/account/logout")">@Html.AntiForgeryToken()<button type="submit">Cerrar sesión</button></form>
+    </div></details>
+}
+else
+{
+    <a href="@Url.Content("~/account/login")" class="login">Ingresar</a>
+}

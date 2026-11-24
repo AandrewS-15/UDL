@@ -1,0 +1,21 @@
+@model UDL.ViewModels.SubmissionHistoryViewModel
+@{ Layout = "~/Views/Shared/_PublicLayout.cshtml"; ViewData["Title"] = "Mis envíos"; }
+<div class="page-intro"><div><div class="eyebrow">UDL · Envíos</div><h1>Mis envíos<span class="blue">.</span></h1><p class="muted">Historial del jugador vinculado a tu cuenta. Fechas en UTC.</p></div><a class="btn secondary" href="@Url.Content("~/submissions/new")">Enviar record</a></div>
+@if (TempData["SubmissionSent"] is string message) { <p class="reading-surface" role="status">@message</p> }
+<section class="reading-surface">
+@foreach (var item in Model.Items)
+{
+    <article class="profile-section submission-history" data-submission-id="@item.IdSubmission">
+        <div class="section-head"><h2><a class="text-link" href="@Url.Content($"~/levels/{item.IdNivel}")">@item.Nombre</a> · @item.Porcentaje% @(item.Porcentaje == 100 ? "· Completion" : "")</h2><span class="badge">@item.Estado</span></div>
+        <p class="muted small"><time datetime="@item.FechaEnvio.ToString("yyyy-MM-ddTHH:mm:ss")Z">@item.FechaEnvio.ToString("dd/MM/yyyy HH:mm") UTC</time></p>
+        @if (UDL.ViewModels.HttpVideoUrlAttribute.IsHttpUrl(item.VideoUrl)) { <a class="text-link" href="@item.VideoUrl" target="_blank" rel="noopener noreferrer">Ver video ↗</a> }
+        @if (!string.IsNullOrWhiteSpace(item.MotivoRechazo)) { <p class="muted spaced">Motivo: @item.MotivoRechazo</p> }
+    </article>
+}
+@if (Model.Items.Count == 0) { <p class="muted">Todavía no hay envíos en esta página. Cuando envíes un record, aparecerá aquí con su estado.</p> }
+<div class="actions">
+    @if (Model.Page > 1) { <a class="text-link" href="@Url.Content($"~/submissions/mine?page={Model.Page - 1}")">← Anterior</a> }
+    @if (Model.HasNext) { <a class="text-link" href="@Url.Content($"~/submissions/mine?page={Model.Page + 1}")">Siguiente →</a> }
+</div>
+</section>
+

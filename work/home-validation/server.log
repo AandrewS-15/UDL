@@ -1,0 +1,355 @@
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5083
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\andre\OneDrive\Escritorio\UDL
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (57ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@p) [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [r0].[IdRecord], [r0].[IdJugador], [r0].[IdNivel], [j].[NombreGD], [n].[Nombre] AS [NombreNivel], [r0].[FechaAprobacion]
+      FROM (
+          SELECT TOP(@p) [r].[IdRecord], [r].[FechaAprobacion], [r].[IdJugador], [r].[IdNivel]
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdSubmissionOrigen] IS NOT NULL AND [r].[Porcentaje] = CAST(100 AS tinyint)
+          ORDER BY [r].[FechaAprobacion] DESC, [r].[IdRecord] DESC
+      ) AS [r0]
+      INNER JOIN [dbo].[Jugador] AS [j] ON [r0].[IdJugador] = [j].[IdJugador]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [r0].[IdNivel] = [n].[IdNivel]
+      ORDER BY [r0].[FechaAprobacion] DESC, [r0].[IdRecord] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [h0].[IdHistorial], [h0].[IdNivel], [n].[Nombre], [h0].[Fecha], [n].[UltimaSincronizacion], [h0].[PosicionAredl], [h0].[PuntosAredl], [h0].[EstadoAredl], [n].[PosicionAredl], [n].[PuntosAredl], [n].[EstadoAredl], [h2].[Posicion], [h2].[Puntos], [h2].[Estado], [h2].[c]
+      FROM (
+          SELECT TOP(@p) [h].[IdHistorial], [h].[EstadoAredl], [h].[Fecha], [h].[IdNivel], [h].[PosicionAredl], [h].[PuntosAredl]
+          FROM [dbo].[HistorialNivel] AS [h]
+          ORDER BY [h].[Fecha] DESC, [h].[IdHistorial] DESC
+      ) AS [h0]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [h0].[IdNivel] = [n].[IdNivel]
+      OUTER APPLY (
+          SELECT TOP(1) [h1].[PosicionAredl] AS [Posicion], [h1].[PuntosAredl] AS [Puntos], [h1].[EstadoAredl] AS [Estado], 1 AS [c]
+          FROM [dbo].[HistorialNivel] AS [h1]
+          WHERE [h1].[IdNivel] = [h0].[IdNivel] AND ([h1].[Fecha] > [h0].[Fecha] OR ([h1].[Fecha] = [h0].[Fecha] AND [h1].[IdHistorial] > [h0].[IdHistorial]))
+          ORDER BY [h1].[Fecha], [h1].[IdHistorial]
+      ) AS [h2]
+      ORDER BY [h0].[Fecha] DESC, [h0].[IdHistorial] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[PuntosAredl], [n].[GeometryDashId]
+      FROM [dbo].[Record] AS [r]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+      WHERE [r].[IdJugador] = @id AND [r].[Porcentaje] = CAST(100 AS tinyint)
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (26ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@p) [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [r0].[IdRecord], [r0].[IdJugador], [r0].[IdNivel], [j].[NombreGD], [n].[Nombre] AS [NombreNivel], [r0].[FechaAprobacion]
+      FROM (
+          SELECT TOP(@p) [r].[IdRecord], [r].[FechaAprobacion], [r].[IdJugador], [r].[IdNivel]
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdSubmissionOrigen] IS NOT NULL AND [r].[Porcentaje] = CAST(100 AS tinyint)
+          ORDER BY [r].[FechaAprobacion] DESC, [r].[IdRecord] DESC
+      ) AS [r0]
+      INNER JOIN [dbo].[Jugador] AS [j] ON [r0].[IdJugador] = [j].[IdJugador]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [r0].[IdNivel] = [n].[IdNivel]
+      ORDER BY [r0].[FechaAprobacion] DESC, [r0].[IdRecord] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [h0].[IdHistorial], [h0].[IdNivel], [n].[Nombre], [h0].[Fecha], [n].[UltimaSincronizacion], [h0].[PosicionAredl], [h0].[PuntosAredl], [h0].[EstadoAredl], [n].[PosicionAredl], [n].[PuntosAredl], [n].[EstadoAredl], [h2].[Posicion], [h2].[Puntos], [h2].[Estado], [h2].[c]
+      FROM (
+          SELECT TOP(@p) [h].[IdHistorial], [h].[EstadoAredl], [h].[Fecha], [h].[IdNivel], [h].[PosicionAredl], [h].[PuntosAredl]
+          FROM [dbo].[HistorialNivel] AS [h]
+          ORDER BY [h].[Fecha] DESC, [h].[IdHistorial] DESC
+      ) AS [h0]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [h0].[IdNivel] = [n].[IdNivel]
+      OUTER APPLY (
+          SELECT TOP(1) [h1].[PosicionAredl] AS [Posicion], [h1].[PuntosAredl] AS [Puntos], [h1].[EstadoAredl] AS [Estado], 1 AS [c]
+          FROM [dbo].[HistorialNivel] AS [h1]
+          WHERE [h1].[IdNivel] = [h0].[IdNivel] AND ([h1].[Fecha] > [h0].[Fecha] OR ([h1].[Fecha] = [h0].[Fecha] AND [h1].[IdHistorial] > [h0].[IdHistorial]))
+          ORDER BY [h1].[Fecha], [h1].[IdHistorial]
+      ) AS [h2]
+      ORDER BY [h0].[Fecha] DESC, [h0].[IdHistorial] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[PuntosAredl], [n].[GeometryDashId]
+      FROM [dbo].[Record] AS [r]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+      WHERE [r].[IdJugador] = @id AND [r].[Porcentaje] = CAST(100 AS tinyint)
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (12ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@p) [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [r0].[IdRecord], [r0].[IdJugador], [r0].[IdNivel], [j].[NombreGD], [n].[Nombre] AS [NombreNivel], [r0].[FechaAprobacion]
+      FROM (
+          SELECT TOP(@p) [r].[IdRecord], [r].[FechaAprobacion], [r].[IdJugador], [r].[IdNivel]
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdSubmissionOrigen] IS NOT NULL AND [r].[Porcentaje] = CAST(100 AS tinyint)
+          ORDER BY [r].[FechaAprobacion] DESC, [r].[IdRecord] DESC
+      ) AS [r0]
+      INNER JOIN [dbo].[Jugador] AS [j] ON [r0].[IdJugador] = [j].[IdJugador]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [r0].[IdNivel] = [n].[IdNivel]
+      ORDER BY [r0].[FechaAprobacion] DESC, [r0].[IdRecord] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [h0].[IdHistorial], [h0].[IdNivel], [n].[Nombre], [h0].[Fecha], [n].[UltimaSincronizacion], [h0].[PosicionAredl], [h0].[PuntosAredl], [h0].[EstadoAredl], [n].[PosicionAredl], [n].[PuntosAredl], [n].[EstadoAredl], [h2].[Posicion], [h2].[Puntos], [h2].[Estado], [h2].[c]
+      FROM (
+          SELECT TOP(@p) [h].[IdHistorial], [h].[EstadoAredl], [h].[Fecha], [h].[IdNivel], [h].[PosicionAredl], [h].[PuntosAredl]
+          FROM [dbo].[HistorialNivel] AS [h]
+          ORDER BY [h].[Fecha] DESC, [h].[IdHistorial] DESC
+      ) AS [h0]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [h0].[IdNivel] = [n].[IdNivel]
+      OUTER APPLY (
+          SELECT TOP(1) [h1].[PosicionAredl] AS [Posicion], [h1].[PuntosAredl] AS [Puntos], [h1].[EstadoAredl] AS [Estado], 1 AS [c]
+          FROM [dbo].[HistorialNivel] AS [h1]
+          WHERE [h1].[IdNivel] = [h0].[IdNivel] AND ([h1].[Fecha] > [h0].[Fecha] OR ([h1].[Fecha] = [h0].[Fecha] AND [h1].[IdHistorial] > [h0].[IdHistorial]))
+          ORDER BY [h1].[Fecha], [h1].[IdHistorial]
+      ) AS [h2]
+      ORDER BY [h0].[Fecha] DESC, [h0].[IdHistorial] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[PuntosAredl], [n].[GeometryDashId]
+      FROM [dbo].[Record] AS [r]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+      WHERE [r].[IdJugador] = @id AND [r].[Porcentaje] = CAST(100 AS tinyint)
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@p) [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [r0].[IdRecord], [r0].[IdJugador], [r0].[IdNivel], [j].[NombreGD], [n].[Nombre] AS [NombreNivel], [r0].[FechaAprobacion]
+      FROM (
+          SELECT TOP(@p) [r].[IdRecord], [r].[FechaAprobacion], [r].[IdJugador], [r].[IdNivel]
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdSubmissionOrigen] IS NOT NULL AND [r].[Porcentaje] = CAST(100 AS tinyint)
+          ORDER BY [r].[FechaAprobacion] DESC, [r].[IdRecord] DESC
+      ) AS [r0]
+      INNER JOIN [dbo].[Jugador] AS [j] ON [r0].[IdJugador] = [j].[IdJugador]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [r0].[IdNivel] = [n].[IdNivel]
+      ORDER BY [r0].[FechaAprobacion] DESC, [r0].[IdRecord] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [h0].[IdHistorial], [h0].[IdNivel], [n].[Nombre], [h0].[Fecha], [n].[UltimaSincronizacion], [h0].[PosicionAredl], [h0].[PuntosAredl], [h0].[EstadoAredl], [n].[PosicionAredl], [n].[PuntosAredl], [n].[EstadoAredl], [h2].[Posicion], [h2].[Puntos], [h2].[Estado], [h2].[c]
+      FROM (
+          SELECT TOP(@p) [h].[IdHistorial], [h].[EstadoAredl], [h].[Fecha], [h].[IdNivel], [h].[PosicionAredl], [h].[PuntosAredl]
+          FROM [dbo].[HistorialNivel] AS [h]
+          ORDER BY [h].[Fecha] DESC, [h].[IdHistorial] DESC
+      ) AS [h0]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [h0].[IdNivel] = [n].[IdNivel]
+      OUTER APPLY (
+          SELECT TOP(1) [h1].[PosicionAredl] AS [Posicion], [h1].[PuntosAredl] AS [Puntos], [h1].[EstadoAredl] AS [Estado], 1 AS [c]
+          FROM [dbo].[HistorialNivel] AS [h1]
+          WHERE [h1].[IdNivel] = [h0].[IdNivel] AND ([h1].[Fecha] > [h0].[Fecha] OR ([h1].[Fecha] = [h0].[Fecha] AND [h1].[IdHistorial] > [h0].[IdHistorial]))
+          ORDER BY [h1].[Fecha], [h1].[IdHistorial]
+      ) AS [h2]
+      ORDER BY [h0].[Fecha] DESC, [h0].[IdHistorial] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[PuntosAredl], [n].[Publisher], [n].[GeometryDashId], [n].[TwoPlayer], [n].[Descripcion] AS [Description], [n].[Tags] AS [TagsRaw], [n].[SongId] AS [Song], [n].[EdelEnjoyment] AS [EDEL], [n].[GddlTier] AS [GDDL], [n].[NlwTier] AS [NLW]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [n].[IdNivel]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE EXISTS (
+          SELECT 1
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdNivel] = [n].[IdNivel] AND [r].[Porcentaje] = CAST(100 AS tinyint))
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (16ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      WHERE EXISTS (
+          SELECT 1
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[IdNivel] = @id AND [r].[Porcentaje] = CAST(100 AS tinyint))
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r0]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r0].[IdNivel] = [n].[IdNivel]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@p) [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [r0].[IdRecord], [r0].[IdJugador], [r0].[IdNivel], [j].[NombreGD], [n].[Nombre] AS [NombreNivel], [r0].[FechaAprobacion]
+      FROM (
+          SELECT TOP(@p) [r].[IdRecord], [r].[FechaAprobacion], [r].[IdJugador], [r].[IdNivel]
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdSubmissionOrigen] IS NOT NULL AND [r].[Porcentaje] = CAST(100 AS tinyint)
+          ORDER BY [r].[FechaAprobacion] DESC, [r].[IdRecord] DESC
+      ) AS [r0]
+      INNER JOIN [dbo].[Jugador] AS [j] ON [r0].[IdJugador] = [j].[IdJugador]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [r0].[IdNivel] = [n].[IdNivel]
+      ORDER BY [r0].[FechaAprobacion] DESC, [r0].[IdRecord] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [h0].[IdHistorial], [h0].[IdNivel], [n].[Nombre], [h0].[Fecha], [n].[UltimaSincronizacion], [h0].[PosicionAredl], [h0].[PuntosAredl], [h0].[EstadoAredl], [n].[PosicionAredl], [n].[PuntosAredl], [n].[EstadoAredl], [h2].[Posicion], [h2].[Puntos], [h2].[Estado], [h2].[c]
+      FROM (
+          SELECT TOP(@p) [h].[IdHistorial], [h].[EstadoAredl], [h].[Fecha], [h].[IdNivel], [h].[PosicionAredl], [h].[PuntosAredl]
+          FROM [dbo].[HistorialNivel] AS [h]
+          ORDER BY [h].[Fecha] DESC, [h].[IdHistorial] DESC
+      ) AS [h0]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [h0].[IdNivel] = [n].[IdNivel]
+      OUTER APPLY (
+          SELECT TOP(1) [h1].[PosicionAredl] AS [Posicion], [h1].[PuntosAredl] AS [Puntos], [h1].[EstadoAredl] AS [Estado], 1 AS [c]
+          FROM [dbo].[HistorialNivel] AS [h1]
+          WHERE [h1].[IdNivel] = [h0].[IdNivel] AND ([h1].[Fecha] > [h0].[Fecha] OR ([h1].[Fecha] = [h0].[Fecha] AND [h1].[IdHistorial] > [h0].[IdHistorial]))
+          ORDER BY [h1].[Fecha], [h1].[IdHistorial]
+      ) AS [h2]
+      ORDER BY [h0].[Fecha] DESC, [h0].[IdHistorial] DESC

@@ -1,0 +1,12 @@
+@model UDL.ViewModels.LoginViewModel
+@{ Layout = "~/Views/Shared/_PublicLayout.cshtml"; ViewData["Title"] = "Ingresar"; }
+<section class="auth-surface"><div class="eyebrow">Cuenta UDL</div><h1>Ingresar<span class="blue">.</span></h1>
+<form method="post" action="@Url.Content("~/account/login")">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="All" class="form-errors" role="alert"></div>
+    <input asp-for="ReturnUrl" type="hidden">
+    <div class="form-field"><label asp-for="Login"></label><input asp-for="Login" autocomplete="username" required></div>
+    <div class="form-field"><label asp-for="Password"></label><input asp-for="Password" autocomplete="current-password" required></div>
+    <label class="check-label"><input asp-for="RememberMe"> Recordar sesión</label>
+    <div class="actions"><button type="submit" class="btn">Ingresar</button><a class="text-link" href="@Url.Content("~/account/register")">Crear cuenta</a></div>
+</form></section>

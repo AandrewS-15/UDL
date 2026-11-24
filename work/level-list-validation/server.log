@@ -1,0 +1,33 @@
+Usando la configuración de inicio de C:\Users\andre\OneDrive\Escritorio\UDL\Properties\launchSettings.json...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5083
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\andre\OneDrive\Escritorio\UDL
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[PuntosAredl], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdNivel] = [n].[IdNivel] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) AS [VictorCount]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE EXISTS (
+          SELECT 1
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdNivel] = [n].[IdNivel] AND [r].[Porcentaje] = CAST(100 AS tinyint))
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[PuntosAredl], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdNivel] = [n].[IdNivel] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) AS [VictorCount]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE EXISTS (
+          SELECT 1
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdNivel] = [n].[IdNivel] AND [r].[Porcentaje] = CAST(100 AS tinyint))
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]

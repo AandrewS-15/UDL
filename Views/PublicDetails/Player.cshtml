@@ -1,0 +1,23 @@
+@model UDL.ViewModels.PlayerProfileViewModel
+@{ Layout = "~/Views/Shared/_PublicLayout.cshtml"; ViewData["Title"] = Model.NombreGD; }
+<a class="back" href="@Url.Content("~/#players")">← Jugadores</a>
+<div class="profile-heading">
+    <div class="eyebrow">Jugador uruguayo</div>
+    <div class="public-player-heading">
+        @await Html.PartialAsync("_Avatar", new UDL.ViewModels.PlayerRankingViewModel { NombreGD = Model.NombreGD, AvatarUrl = Model.AvatarUrl })
+        <h1>@Model.NombreGD<span class="blue">.</span></h1>
+    </div>
+    <div class="profile-stats">
+        <div><span class="muted small">Puesto en Uruguay</span><strong>#@Model.PosicionUy</strong></div>
+        <div><span class="muted small">Puntos UY</span><strong>@Model.TotalPuntos.ToString("0.#", System.Globalization.CultureInfo.InvariantCulture)<small> pts</small></strong></div>
+        <div><span class="muted small">Extreme Demons</span><strong>@Model.CantidadCompletions</strong></div>
+    </div>
+</div>
+<section class="profile-section"><h2>Nivel más difícil</h2>
+    @if (Model.Hardest is not null) { @await Html.PartialAsync("_Completion", Model.Hardest) }
+    else { <p class="muted">Todavía no tiene completions al 100%.</p> }
+</section>
+<section class="profile-section" aria-label="Completions">
+    <div class="section-head"><h2>Completions</h2><span class="victors">@Model.CantidadCompletions al 100%</span></div>
+    @foreach (var completion in Model.Completions) { @await Html.PartialAsync("_Completion", completion) }
+</section>

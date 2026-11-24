@@ -1,0 +1,12 @@
+@model UDL.ViewModels.RegisterViewModel
+@{ Layout = "~/Views/Shared/_PublicLayout.cshtml"; ViewData["Title"] = "Registrarse"; }
+<section class="auth-surface"><div class="eyebrow">Cuenta UDL</div><h1>Registrarse<span class="blue">.</span></h1>
+<form method="post" action="@Url.Content("~/account/register")">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="All" class="form-errors" role="alert"></div>
+    <div class="form-field"><label asp-for="UserName"></label><input asp-for="UserName" autocomplete="username" required minlength="3" maxlength="50"><small class="muted">Letras, números, punto, guion y guion bajo.</small></div>
+    <div class="form-field"><label asp-for="Email"></label><input asp-for="Email" type="email" autocomplete="email" required></div>
+    <div class="form-field"><label asp-for="Password"></label><input asp-for="Password" autocomplete="new-password" required><small class="muted">Al menos 12 caracteres, mayúscula, minúscula, número y símbolo.</small></div>
+    <div class="form-field"><label asp-for="ConfirmPassword"></label><input asp-for="ConfirmPassword" autocomplete="new-password" required></div>
+    <button class="btn" type="submit">Crear cuenta</button>
+</form><p class="muted spaced">¿Ya tenés cuenta? <a class="text-link" href="@Url.Content("~/account/login")">Ingresar</a></p></section>

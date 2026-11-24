@@ -1,0 +1,8 @@
+@model UDL.ViewModels.PlayerRankingViewModel
+<span class="avatar ranking-avatar" aria-hidden="true">
+    @(string.IsNullOrEmpty(Model.NombreGD) ? "?" : System.Globalization.StringInfo.GetNextTextElement(Model.NombreGD).ToUpperInvariant())
+    @if (Uri.TryCreate(Model.AvatarUrl, UriKind.Absolute, out var avatar) && (avatar.Scheme == "https" || avatar.Scheme == "http"))
+    {
+        <img src="@avatar.AbsoluteUri" alt="" loading="lazy" referrerpolicy="no-referrer" data-image-fallback>
+    }
+</span>

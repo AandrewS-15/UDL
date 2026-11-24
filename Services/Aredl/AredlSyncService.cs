@@ -4,7 +4,7 @@ using UDL.Models;
 
 namespace UDL.Services.Aredl;
 
-public sealed class AredlSyncService(AredlService aredl, UdlDbContext db)
+public sealed class AredlSyncService(AredlService aredl, UdlDbContext db) : IAredlSyncService
 {
     public async Task<AredlSyncResult> SynchronizeAsync(CancellationToken cancellationToken = default)
     {

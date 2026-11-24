@@ -1,0 +1,16 @@
+@{ Layout = null; }
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0f17"><title>@ViewData["Title"] — UDL</title>
+<link rel="stylesheet" href="@Url.Content("~/udl-styles.css")">
+</head>
+<body>
+<a href="#main" class="skip">Saltar al contenido</a>
+@await Html.PartialAsync("_PublicHeader")
+<main id="main" class="wrap page" tabindex="-1">@RenderBody()</main>
+<footer><div class="wrap foot"><div><strong>UDL</strong> &nbsp; Uruguay Demon List</div><div class="foot-right"><span>La comunidad uruguaya, nivel a nivel.</span><a href="@Url.Content("~/#rules")">Reglas</a></div></div></footer>
+<script src="@Url.Content("~/udl-public-details.js")"></script>
+</body>
+</html>

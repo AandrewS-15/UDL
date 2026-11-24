@@ -1,0 +1,48 @@
+@model UDL.ViewModels.CreateSubmissionViewModel
+@{ Layout = "~/Views/Shared/_PublicLayout.cshtml"; ViewData["Title"] = "Enviar record"; }
+<div class="page-intro"><div><div class="eyebrow">UDL · Envíos</div><h1>Enviar record<span class="blue">.</span></h1><p class="muted">Tu envío quedará pendiente de revisión. No suma puntos ni modifica records.</p></div><a class="text-link" href="@Url.Content("~/submissions/mine")">Mis envíos →</a></div>
+<section class="reading-surface submission-form">
+<h2>Seleccionar nivel</h2>
+<form method="get" action="@Url.Content("~/submissions/new")" class="actions">
+    <label class="search"><input type="search" name="search" value="@Model.Search" maxlength="100" required placeholder="Nombre del nivel" aria-label="Buscar nivel"></label>
+    <button type="submit" class="btn secondary">Buscar</button>
+</form>
+@if (Model.Search.Length > 0)
+{
+    <p class="muted small spaced">Hasta 20 coincidencias. Afiná el nombre si no encontrás el nivel.</p>
+    @foreach (var level in Model.Results)
+    {
+        <a class="rankrow submission-choice" href="@Url.Content($"~/submissions/new?levelId={level.IdNivel}")"><strong>@level.Nombre</strong><span class="muted">@(level.PosicionAredl.HasValue ? $"#{level.PosicionAredl} AREDL" : "No disponible")</span><span>Seleccionar →</span></a>
+    }
+    @if (Model.Results.Count == 0) { <p class="muted spaced">No hay niveles que coincidan.</p> }
+}
+<div asp-validation-summary="All" class="form-errors" role="alert"></div>
+@if (Model.Level is { } selected)
+{
+    <section class="profile-section" aria-label="Nivel seleccionado">
+        <h2>@selected.Nombre</h2>
+        @if (selected.Available)
+        {
+            <p class="muted">#@selected.PosicionAredl AREDL · @selected.Category</p>
+            <p class="muted">Raw footage: @(selected.RequiresRawFootage ? "Obligatorio" : "Opcional")</p>
+        }
+        else { <p class="muted">Este nivel no está disponible actualmente para envío de records.</p> }
+    </section>
+    @if (selected.Available)
+    {
+        <form method="post" action="@Url.Content("~/submissions/new")">
+            @Html.AntiForgeryToken()<input asp-for="IdNivel" type="hidden">
+            <p class="spaced"><strong>Tipo:</strong> Completion (100%)</p>
+            <div class="form-field"><label asp-for="VideoUrl"></label><input asp-for="VideoUrl" type="url" maxlength="500" required placeholder="https://…"></div>
+            <div class="form-field"><label asp-for="RawFootageUrl"></label><input asp-for="RawFootageUrl" type="url" maxlength="500" required="@selected.RequiresRawFootage" placeholder="https://…"></div>
+            <div class="form-field"><label asp-for="FPS"></label><input asp-for="FPS" type="number" min="1" step="1"></div>
+            <div class="form-field"><label asp-for="Dispositivo"></label><input asp-for="Dispositivo" maxlength="50" placeholder="PC, Mobile, 60Hz, 240Hz…"></div>
+            <div class="form-field"><label asp-for="Notas"></label><textarea asp-for="Notas" maxlength="500" rows="4" placeholder="Texto plano, hasta 500 caracteres"></textarea></div>
+            <p class="muted small spaced">La vinculación con tu jugador sigue siendo provisional y no acredita identidad.</p>
+            <button type="submit" class="btn">Enviar para revisión</button>
+        </form>
+    }
+}
+else if (Model.IdNivel > 0) { <p class="muted spaced">El nivel seleccionado no existe. Buscá otro nivel.</p> }
+</section>
+

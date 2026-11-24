@@ -1,0 +1,95 @@
+Snapshot: 1615 niveles, 3087 historiales. Tablas protegidas: 10.
+{
+  "Posicion": 0,
+  "Puntos": 0,
+  "Estado": 0,
+  "Nuevos": 0,
+  "Historiales": 0,
+  "HistorialCorrecto": true,
+  "TablasProtegidasIntactas": true,
+  "ErroresFormula": 0,
+  "TotalRankeados": 1615
+}
+[]
+TOP 10: [
+  {
+    "Posicion": 1,
+    "IdJugador": 51,
+    "NombreGD": "Santiricca",
+    "AvatarUrl": "https://cdn.discordapp.com/avatars/376892077385973760/d0ec53a15314db02c5e9efc6d62e9c02.png?size=512",
+    "TotalPuntos": 7911.10,
+    "CantidadCompletions": 66
+  },
+  {
+    "Posicion": 2,
+    "IdJugador": 12,
+    "NombreGD": "cxve",
+    "AvatarUrl": "https://cdn.discordapp.com/avatars/998742022078873681/12761928413b7a633e077fa0f80d219a.png?size=512",
+    "TotalPuntos": 5484.70,
+    "CantidadCompletions": 65
+  },
+  {
+    "Posicion": 3,
+    "IdJugador": 20,
+    "NombreGD": "Fif",
+    "AvatarUrl": "https://cdn.discordapp.com/avatars/837900433812094987/f46b461c24bf5a147b63fcbf73527c0f.png?size=512",
+    "TotalPuntos": 4820.60,
+    "CantidadCompletions": 44
+  },
+  {
+    "Posicion": 4,
+    "IdJugador": 5,
+    "NombreGD": "Ardizz",
+    "AvatarUrl": "https://cdn.discordapp.com/avatars/1261778289895149619/1bc70e961592b0aa57f28f8eafd2d251.png?size=512",
+    "TotalPuntos": 4519.30,
+    "CantidadCompletions": 1
+  },
+  {
+    "Posicion": 5,
+    "IdJugador": 26,
+    "NombreGD": "Gekura",
+    "AvatarUrl": "https://cdn.discordapp.com/avatars/888947119606595614/c65f49c298591191b27fbfff81dff5ec.png?size=512",
+    "TotalPuntos": 4288.00,
+    "CantidadCompletions": 26
+  },
+  {
+    "Posicion": 6,
+    "IdJugador": 39,
+    "NombreGD": "Neuronfish",
+    "AvatarUrl": "https://cdn.discordapp.com/avatars/999113061380145212/4c6b5147599331d5c64ebae1e2adced7.png?size=512",
+    "TotalPuntos": 3426.20,
+    "CantidadCompletions": 30
+  },
+  {
+    "Posicion": 7,
+    "IdJugador": 34,
+    "NombreGD": "LunatikSick",
+    "AvatarUrl": "https://cdn.discordapp.com/avatars/1224340888096866387/79762ecd727d0e0295c5287717d3e8d2.png?size=512",
+    "TotalPuntos": 3333.40,
+    "CantidadCompletions": 40
+  },
+  {
+    "Posicion": 8,
+    "IdJugador": 50,
+    "NombreGD": "Salva",
+    "AvatarUrl": "https://cdn.discordapp.com/avatars/931604964294402068/349914c6a875db50d9841fd9480c3f6f.png?size=512",
+    "TotalPuntos": 2970.50,
+    "CantidadCompletions": 8
+  },
+  {
+    "Posicion": 9,
+    "IdJugador": 42,
+    "NombreGD": "Pissa",
+    "AvatarUrl": "https://cdn.discordapp.com/avatars/635930792349925387/c2059f734610cf5e126c276b6cfda26d.png?size=512",
+    "TotalPuntos": 2887.10,
+    "CantidadCompletions": 27
+  },
+  {
+    "Posicion": 10,
+    "IdJugador": 4,
+    "NombreGD": "Andres Beltran",
+    "AvatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png?size=4096",
+    "TotalPuntos": 2528.60,
+    "CantidadCompletions": 17
+  }
+]

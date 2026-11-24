@@ -1,0 +1,8 @@
+@model UDL.ViewModels.UruguayLevelListItemViewModel
+<a class="levelrow level-banner-row completion-row" href="@Url.Content($"~/levels/{Model.IdNivel}")">
+    @if (Model.ThumbnailUrl is not null) { <img class="level-banner-image" src="@Model.ThumbnailUrl" alt="" loading="lazy" data-image-fallback> }
+    <span class="levelrank">#@Model.PosicionAredl</span>
+    <div><div class="levelname">@Model.Nombre</div><div class="creator">@Model.Categoria · AREDL #@Model.PosicionAredl</div></div>
+    <div class="levelpoints">@Model.PuntosAredl.ToString("0.#", System.Globalization.CultureInfo.InvariantCulture)<small>pts</small></div>
+    <span class="arrow" aria-hidden="true">↗</span>
+</a>

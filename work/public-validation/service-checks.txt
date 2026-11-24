@@ -1,0 +1,7 @@
+OK: thumbnails por GD ID, ID inválido, perfil sin completions y nivel sin victors.
+PERFIL 51 Santiricca: #1, 7918,80, 66 completions; hardest Tartarus AREDL #108; avatar=https://cdn.discordapp.com/avatars/376892077385973760/d0ec53a15314db02c5e9efc6d62e9c02.png?size=512
+PERFIL 12 cxve: #2, 5483,00, 65 completions; hardest Thinking Space AREDL #181; avatar=https://cdn.discordapp.com/avatars/998742022078873681/12761928413b7a633e077fa0f80d219a.png?size=512
+PERFIL 20 Fif: #3, 4820,00, 44 completions; hardest Zodiac AREDL #164; avatar=https://cdn.discordapp.com/avatars/837900433812094987/f46b461c24bf5a147b63fcbf73527c0f.png?size=512
+NIVEL 46 Sakupen Circles: UY #1, AREDL #43, 4519,30 pts, 1 victors: Ardizz; thumbnail=https://raw.githubusercontent.com/All-Rated-Extreme-Demon-List/Thumbnails/main/levels/full/76962930.webp
+NIVEL 111 Tartarus: UY #3, AREDL #108, 1588,00 pts, 2 victors: Santiricca, Salva; thumbnail=https://raw.githubusercontent.com/All-Rated-Extreme-Demon-List/Thumbnails/main/levels/full/59075347.webp
+OK: 66 perfiles y 250 detalles contrastados con SQL independiente, hardest, puntos, posiciones, completions, avatares, victors y ausentes. Solo lectura.

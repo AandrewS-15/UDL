@@ -1,0 +1,25 @@
+@model UDL.ViewModels.HomeViewModel
+<section class="hero hero-intro" aria-label="Uruguay Demon List"><div class="hero-content"><div class="eyebrow"><span class="dot"></span>Geometry Dash · Comunidad uruguaya</div><h1 class="game-title"><span class="title-country">URUGUAY</span><span class="title-game">DEMONLIST</span></h1><div class="actions"><a class="btn" href="#list">Explorar niveles <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#players">Ver jugadores <span aria-hidden="true">→</span></a></div></div></section>
+<div class="home-grid">
+    <section id="home-players"><div class="section-head"><h2>Jugadores destacados</h2><a class="text-link" href="#players">Ver ranking →</a></div>
+        @foreach (var p in Model.TopPlayers)
+        {
+            <a class="rankrow" href="@Url.Content($"~/players/{p.IdJugador}")">
+                <span class="rank @(p.Posicion == 1 ? "gold" : p.Posicion == 2 ? "silver" : "bronze")">@p.Posicion.ToString("00")</span>
+                @await Html.PartialAsync("_Avatar", p)
+                <strong>@p.NombreGD</strong><span class="points">@p.TotalPuntos.ToString("0.#", System.Globalization.CultureInfo.InvariantCulture) <span>pts</span></span>
+            </a>
+        }
+        @if (Model.TopPlayers.Count == 0) { <p class="muted">Aún no hay jugadores registrados.</p> }
+    </section>
+    <section id="home-records"><div class="section-head"><h2>Últimos récords</h2></div>
+        @foreach (var r in Model.RecentRecords)
+        {
+            <a class="record-line" href="@Url.Content($"~/levels/{r.IdNivel}")"><div><p><strong>@r.NombreGD</strong> completó <span class="blue">@r.NombreNivel</span></p><small>Aprobado el <time datetime="@r.FechaAprobacion.ToString("yyyy-MM-ddTHH:mm:ss")">@r.FechaAprobacion.ToString("dd/MM/yyyy HH:mm")</time></small></div><span class="percent">100% <span aria-hidden="true">↗</span></span></a>
+        }
+        @if (Model.RecentRecords.Count == 0) { <p class="muted">Aún no hay actividad reciente.</p> }
+    </section>
+</div>
+<section class="changes"><div class="section-head"><h2>Cambios en la lista uruguaya</h2><a class="text-link" href="#list">Ver lista →</a></div><div class="change-grid">
+    <p class="muted" style="grid-column:1/-1;min-height:64px">Aún no hay cambios recientes en la lista uruguaya.</p>
+</div></section>

@@ -1,0 +1,1146 @@
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (40ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @normalizedName
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @normalizedName
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @normalizedName
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5083
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\andre\OneDrive\Escritorio\UDL
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @normalizedUserName
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@user_Id='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+      FROM [AspNetUserClaims] AS [a]
+      WHERE [a].[UserId] = @user_Id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT [a0].[Name]
+      FROM [AspNetUserRoles] AS [a]
+      INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+      WHERE [a].[UserId] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @normalizedName
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@role_Id='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[ClaimType], [a].[ClaimValue]
+      FROM [AspNetRoleClaims] AS [a]
+      WHERE [a].[RoleId] = @role_Id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @normalizedUserName
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@user_Id='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+      FROM [AspNetUserClaims] AS [a]
+      WHERE [a].[UserId] = @user_Id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT [a0].[Name]
+      FROM [AspNetUserRoles] AS [a]
+      INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+      WHERE [a].[UserId] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @normalizedName
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@role_Id='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[ClaimType], [a].[ClaimValue]
+      FROM [AspNetRoleClaims] AS [a]
+      WHERE [a].[RoleId] = @role_Id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@p='?' (DbType = Int32), @model_Search_contains='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@p) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[Nombre] LIKE @model_Search_contains ESCAPE N'\'
+      ORDER BY [n].[Nombre], [n].[IdNivel]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      DECLARE @r int; EXEC @r = sys.sp_getapplock @Resource=@p0, @LockMode='Exclusive', @LockOwner='Transaction', @LockTimeout=10000; IF @r < 0 THROW 51010, 'No se pudo obtener el bloqueo de envío.', 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      DECLARE @r int; EXEC @r = sys.sp_getapplock @Resource=@p0, @LockMode='Exclusive', @LockOwner='Transaction', @LockTimeout=10000; IF @r < 0 THROW 51010, 'No se pudo obtener el bloqueo de envío.', 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      DECLARE @r int; EXEC @r = sys.sp_getapplock @Resource=@p0, @LockMode='Exclusive', @LockOwner='Transaction', @LockTimeout=10000; IF @r < 0 THROW 51010, 'No se pudo obtener el bloqueo de envío.', 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      DECLARE @r int; EXEC @r = sys.sp_getapplock @Resource=@p0, @LockMode='Exclusive', @LockOwner='Transaction', @LockTimeout=10000; IF @r < 0 THROW 51010, 'No se pudo obtener el bloqueo de envío.', 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@playerId='?' (DbType = Int32), @input_IdNivel='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[Submission] AS [s]
+              WHERE [s].[IdJugador] = @playerId AND [s].[IdNivel] = @input_IdNivel AND [s].[Porcentaje] = CAST(100 AS tinyint) AND [s].[Estado] = N'Pendiente') THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 20), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 450), @p7='?' (DbType = Int32), @p8='?' (Size = 500), @p9='?' (Size = 500), @p10='?' (Size = 1) (DbType = Byte), @p11='?' (Size = 500), @p12='?' (Size = 500)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [dbo].[Submission] ([Dispositivo], [Estado], [FechaEnvio], [FechaRevision], [FPS], [IdJugador], [IdModerador], [IdNivel], [MotivoRechazo], [Notas], [Porcentaje], [RawFootageUrl], [VideoUrl])
+      OUTPUT INSERTED.[IdSubmission]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      DECLARE @r int; EXEC @r = sys.sp_getapplock @Resource=@p0, @LockMode='Exclusive', @LockOwner='Transaction', @LockTimeout=10000; IF @r < 0 THROW 51010, 'No se pudo obtener el bloqueo de envío.', 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@playerId='?' (DbType = Int32), @input_IdNivel='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[Submission] AS [s]
+              WHERE [s].[IdJugador] = @playerId AND [s].[IdNivel] = @input_IdNivel AND [s].[Porcentaje] = CAST(100 AS tinyint) AND [s].[Estado] = N'Pendiente') THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 20), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 450), @p7='?' (DbType = Int32), @p8='?' (Size = 500), @p9='?' (Size = 500), @p10='?' (Size = 1) (DbType = Byte), @p11='?' (Size = 500), @p12='?' (Size = 500)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [dbo].[Submission] ([Dispositivo], [Estado], [FechaEnvio], [FechaRevision], [FPS], [IdJugador], [IdModerador], [IdNivel], [MotivoRechazo], [Notas], [Porcentaje], [RawFootageUrl], [VideoUrl])
+      OUTPUT INSERTED.[IdSubmission]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      DECLARE @r int; EXEC @r = sys.sp_getapplock @Resource=@p0, @LockMode='Exclusive', @LockOwner='Transaction', @LockTimeout=10000; IF @r < 0 THROW 51010, 'No se pudo obtener el bloqueo de envío.', 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@playerId='?' (DbType = Int32), @input_IdNivel='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[Submission] AS [s]
+              WHERE [s].[IdJugador] = @playerId AND [s].[IdNivel] = @input_IdNivel AND [s].[Porcentaje] = CAST(100 AS tinyint) AND [s].[Estado] = N'Pendiente') THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 20), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 450), @p7='?' (DbType = Int32), @p8='?' (Size = 500), @p9='?' (Size = 500), @p10='?' (Size = 1) (DbType = Byte), @p11='?' (Size = 500), @p12='?' (Size = 500)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [dbo].[Submission] ([Dispositivo], [Estado], [FechaEnvio], [FechaRevision], [FPS], [IdJugador], [IdModerador], [IdNivel], [MotivoRechazo], [Notas], [Porcentaje], [RawFootageUrl], [VideoUrl])
+      OUTPUT INSERTED.[IdSubmission]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      DECLARE @r int; EXEC @r = sys.sp_getapplock @Resource=@p0, @LockMode='Exclusive', @LockOwner='Transaction', @LockTimeout=10000; IF @r < 0 THROW 51010, 'No se pudo obtener el bloqueo de envío.', 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@playerId='?' (DbType = Int32), @input_IdNivel='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[Submission] AS [s]
+              WHERE [s].[IdJugador] = @playerId AND [s].[IdNivel] = @input_IdNivel AND [s].[Porcentaje] = CAST(100 AS tinyint) AND [s].[Estado] = N'Pendiente') THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      DECLARE @r int; EXEC @r = sys.sp_getapplock @Resource=@p0, @LockMode='Exclusive', @LockOwner='Transaction', @LockTimeout=10000; IF @r < 0 THROW 51010, 'No se pudo obtener el bloqueo de envío.', 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@playerId='?' (DbType = Int32), @input_IdNivel='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[Submission] AS [s]
+              WHERE [s].[IdJugador] = @playerId AND [s].[IdNivel] = @input_IdNivel AND [s].[Porcentaje] = CAST(100 AS tinyint) AND [s].[Estado] = N'Pendiente') THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 20), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 450), @p7='?' (DbType = Int32), @p8='?' (Size = 500), @p9='?' (Size = 500), @p10='?' (Size = 1) (DbType = Byte), @p11='?' (Size = 500), @p12='?' (Size = 500)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [dbo].[Submission] ([Dispositivo], [Estado], [FechaEnvio], [FechaRevision], [FPS], [IdJugador], [IdModerador], [IdNivel], [MotivoRechazo], [Notas], [Porcentaje], [RawFootageUrl], [VideoUrl])
+      OUTPUT INSERTED.[IdSubmission]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      DECLARE @r int; EXEC @r = sys.sp_getapplock @Resource=@p0, @LockMode='Exclusive', @LockOwner='Transaction', @LockTimeout=10000; IF @r < 0 THROW 51010, 'No se pudo obtener el bloqueo de envío.', 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@playerId='?' (DbType = Int32), @input_IdNivel='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[Submission] AS [s]
+              WHERE [s].[IdJugador] = @playerId AND [s].[IdNivel] = @input_IdNivel AND [s].[Porcentaje] = CAST(100 AS tinyint) AND [s].[Estado] = N'Pendiente') THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[RequiresRawFootage]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@playerId='?' (DbType = Int32), @p='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [s0].[IdSubmission], [s0].[IdNivel], [n].[Nombre], [s0].[Porcentaje], [s0].[Estado], [s0].[FechaEnvio], [s0].[VideoUrl], [s0].[MotivoRechazo]
+      FROM (
+          SELECT [s].[IdSubmission], [s].[Estado], [s].[FechaEnvio], [s].[IdNivel], [s].[MotivoRechazo], [s].[Porcentaje], [s].[VideoUrl]
+          FROM [dbo].[Submission] AS [s]
+          WHERE [s].[IdJugador] = @playerId
+          ORDER BY [s].[FechaEnvio] DESC, [s].[IdSubmission] DESC
+          OFFSET @p ROWS FETCH NEXT @p2 ROWS ONLY
+      ) AS [s0]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [s0].[IdNivel] = [n].[IdNivel]
+      ORDER BY [s0].[FechaEnvio] DESC, [s0].[IdSubmission] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[IdJugador]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @userId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@playerId='?' (DbType = Int32), @p='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [s0].[IdSubmission], [s0].[IdNivel], [n].[Nombre], [s0].[Porcentaje], [s0].[Estado], [s0].[FechaEnvio], [s0].[VideoUrl], [s0].[MotivoRechazo]
+      FROM (
+          SELECT [s].[IdSubmission], [s].[Estado], [s].[FechaEnvio], [s].[IdNivel], [s].[MotivoRechazo], [s].[Porcentaje], [s].[VideoUrl]
+          FROM [dbo].[Submission] AS [s]
+          WHERE [s].[IdJugador] = @playerId
+          ORDER BY [s].[FechaEnvio] DESC, [s].[IdSubmission] DESC
+          OFFSET @p ROWS FETCH NEXT @p2 ROWS ONLY
+      ) AS [s0]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [s0].[IdNivel] = [n].[IdNivel]
+      ORDER BY [s0].[FechaEnvio] DESC, [s0].[IdSubmission] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdJugador], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[VinculoJugadorVerificado]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[Id] = @p
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[PuntosAredl], [n].[Publisher], [n].[GeometryDashId], [n].[TwoPlayer], [n].[Descripcion] AS [Description], [n].[Tags] AS [TagsRaw], [n].[SongId] AS [Song], [n].[EdelEnjoyment] AS [EDEL], [n].[GddlTier] AS [GDDL], [n].[NlwTier] AS [NLW]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE [n].[IdNivel] = @id
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [n].[IdNivel]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE EXISTS (
+          SELECT 1
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdNivel] = [n].[IdNivel] AND [r].[Porcentaje] = CAST(100 AS tinyint))
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      WHERE EXISTS (
+          SELECT 1
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[IdNivel] = @id AND [r].[Porcentaje] = CAST(100 AS tinyint))
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r0]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r0].[IdNivel] = [n].[IdNivel]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[GeometryDashId], [n].[PuntosAredl], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdNivel] = [n].[IdNivel] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) AS [VictorCount]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE EXISTS (
+          SELECT 1
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdNivel] = [n].[IdNivel] AND [r].[Porcentaje] = CAST(100 AS tinyint))
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[PuntosAredl], [n].[GeometryDashId]
+      FROM [dbo].[Record] AS [r]
+      INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+      WHERE [r].[IdJugador] = @id AND [r].[Porcentaje] = CAST(100 AS tinyint)
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [j].[IdJugador], [j].[NombreGD], [j].[AvatarUrl], COALESCE((
+          SELECT COALESCE(SUM([n0].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r1]
+          INNER JOIN [dbo].[Nivel] AS [n0] ON [r1].[IdNivel] = [n0].[IdNivel]
+          WHERE [r1].[IdJugador] = [j].[IdJugador] AND [r1].[Porcentaje] = CAST(100 AS tinyint)), 0.0) AS [TotalPuntos], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r2]
+          WHERE [r2].[IdJugador] = [j].[IdJugador] AND [r2].[Porcentaje] = CAST(100 AS tinyint)) AS [CantidadCompletions]
+      FROM [dbo].[Jugador] AS [j]
+      ORDER BY COALESCE((
+          SELECT COALESCE(SUM([n].[PuntosAredl]), 0.0)
+          FROM [dbo].[Record] AS [r]
+          INNER JOIN [dbo].[Nivel] AS [n] ON [r].[IdNivel] = [n].[IdNivel]
+          WHERE [r].[IdJugador] = [j].[IdJugador] AND [r].[Porcentaje] = CAST(100 AS tinyint)), 0.0) DESC, (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdJugador] = [j].[IdJugador] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) DESC, [j].[NombreGD]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [n].[IdNivel], [n].[Nombre], [n].[PosicionAredl], [n].[GeometryDashId], [n].[PuntosAredl], (
+          SELECT COUNT(*)
+          FROM [dbo].[Record] AS [r0]
+          WHERE [r0].[IdNivel] = [n].[IdNivel] AND [r0].[Porcentaje] = CAST(100 AS tinyint)) AS [VictorCount]
+      FROM [dbo].[Nivel] AS [n]
+      WHERE EXISTS (
+          SELECT 1
+          FROM [dbo].[Record] AS [r]
+          WHERE [r].[IdNivel] = [n].[IdNivel] AND [r].[Porcentaje] = CAST(100 AS tinyint))
+      ORDER BY [n].[PosicionAredl], [n].[Nombre]

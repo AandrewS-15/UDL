@@ -1,0 +1,41 @@
+@model UDL.ViewModels.LevelDetailsViewModel
+@{ Layout = "~/Views/Shared/_PublicLayout.cshtml"; ViewData["Title"] = Model.Nombre;
+   var points = Model.PuntosAredl.ToString("0.#", System.Globalization.CultureInfo.InvariantCulture);
+   var uy = Model.PosicionUy.HasValue ? $"#{Model.PosicionUy}" : "Sin completions UY";
+}
+<a class="back" href="@Url.Content("~/#list")">← Lista uruguaya</a>
+@if (User.Identity?.IsAuthenticated == true) { <a class="text-link" href="@Url.Content($"~/submissions/new?levelId={Model.IdNivel}")">Enviar record →</a> }
+<div class="detail-heading refined-heading public-level-banner">
+    @if (Model.ThumbnailUrl is not null) { <img class="level-banner-image" src="@Model.ThumbnailUrl" alt="" data-image-fallback> }
+    <div><div class="eyebrow">AREDL #@Model.PosicionAredl · @Model.Categoria</div><h1>@Model.Nombre<span class="blue">.</span></h1>
+    @if (!string.IsNullOrWhiteSpace(Model.Publisher)) { <p>Publisher: @Model.Publisher</p> }
+    <p class="small">Geometry Dash ID: @Model.GeometryDashId @if (Model.TwoPlayer) { <span class="badge">Two Player</span> }</p></div>
+    <div class="detail-rating"><span class="local-placement">@uy <small>Uruguay</small></span><strong>@points <small>pts UY</small></strong></div>
+</div>
+<div class="profile-stats public-level-stats" aria-label="Estadísticas del nivel">
+    <div><span class="muted small">Victors UY</span><strong>@Model.VictorCount</strong></div>
+    <div><span class="muted small">Posición AREDL</span><strong>#@Model.PosicionAredl</strong></div>
+    <div><span class="muted small">Posición UY</span><strong>@uy</strong></div>
+    <div><span class="muted small">Puntos UDL</span><strong>@points</strong></div>
+</div>
+@if (!string.IsNullOrWhiteSpace(Model.Description) || Model.Tags.Count > 0 || Model.Song.HasValue || Model.EDEL.HasValue || Model.GDDL.HasValue || !string.IsNullOrWhiteSpace(Model.NLW))
+{
+    <section class="metadata public-level-info"><h2>Información del nivel</h2>
+        @if (!string.IsNullOrWhiteSpace(Model.Description)) { <p class="description">@Model.Description</p> }
+        @if (Model.Tags.Count > 0) { <div class="badges" aria-label="Etiquetas del nivel">@foreach (var tag in Model.Tags) { <span class="badge">@tag</span> }</div> }
+        @if (Model.Song.HasValue) { <div class="data-line"><span>Song ID</span><span>@Model.Song</span></div> }
+        @if (Model.EDEL.HasValue) { <div class="data-line"><span>EDEL enjoyment</span><span>@Model.EDEL</span></div> }
+        @if (Model.GDDL.HasValue) { <div class="data-line"><span>GDDL tier</span><span>@Model.GDDL</span></div> }
+        @if (!string.IsNullOrWhiteSpace(Model.NLW)) { <div class="data-line"><span>NLW tier</span><span>@Model.NLW</span></div> }
+    </section>
+}
+<section class="profile-section" aria-label="Victors uruguayos"><div class="section-head"><h2>Victors UY</h2><span class="victors">@Model.VictorCount completions</span></div>
+    @foreach (var player in Model.Victors)
+    {
+        <a class="rankrow public-victor" href="@Url.Content($"~/players/{player.IdJugador}")">
+            <span class="player-identity">@await Html.PartialAsync("_Avatar", player)<strong>@player.NombreGD</strong></span>
+            <span class="percent">100%</span><span class="points">@points <small>pts</small></span><span aria-hidden="true">↗</span>
+        </a>
+    }
+    @if (Model.VictorCount == 0) { <p class="muted">Todavía no hay completions uruguayas al 100%.</p> }
+</section>
